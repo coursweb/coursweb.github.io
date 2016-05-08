@@ -12,4 +12,3 @@ Bienvenue à ce support de cours.
 Ce support de cours vous apprendra à maîtriser les langages du web.
 
 This project is maintained by ms-studio
-Hosted on GitHub Pages — Theme by orderedlist

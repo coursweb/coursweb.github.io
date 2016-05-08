@@ -1,3 +1,8 @@
+---
+layout: post
+title: Cours Programmation Web
+---
+
 # Cours Programmation Web
 
 ## Support de cours programmation web

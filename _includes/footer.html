@@ -7,6 +7,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
+          <li>CollectifWP, Genève</li>
           <li>Eracom, Lausanne</li>
           <li>2016</li>
         </ul>
@@ -14,17 +15,18 @@
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            {% include icon-github.html username="collectifwp" %}
           </li>
-          {% endif %}
-
+          
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+          <li>
+          	{% include icon-twitter.html username="wpgva" %}
+          </li>
         </ul>
       </div>
 

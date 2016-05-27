@@ -24,13 +24,25 @@
     }
 }
 
+.testing {
+    border: 1px solid blue;
+    float: left;
+    clear: left;
+}
+
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 2em;
 
     .menu-icon {
         display: none;
     }
+
+    a {
+        padding: 0.5em;
+    }
+
+    
 
     .page-link {
         color: $text-color;
@@ -40,6 +52,11 @@
         &:not(:last-child) {
             margin-right: 20px;
         }
+    }
+
+    .active {
+        color: violet;
+        background: #eee;
     }
 
     @include media-query($on-palm) {

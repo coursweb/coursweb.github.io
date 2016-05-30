@@ -11,8 +11,8 @@ Méthodes de positionnement et mise en page
 
 Deux bonnes introductions à la mise en page et au positionnement CSS:
 
-* [Introduction au positionnement CSS](http://www.pompage.net/traduction/introduction-au-positionnement-css)*, par Noah Stokes, 2010 (aussi [en anglais](http://alistapart.com/article/css-positioning-101)).
-* [Apprendre les mises en page CSS](http://fr.learnlayout.com/)*, par Greg Smith.
+* *[Introduction au positionnement CSS](http://www.pompage.net/traduction/introduction-au-positionnement-css)*, par Noah Stokes, 2010 (aussi [en anglais](http://alistapart.com/article/css-positioning-101)).
+* *[Apprendre les mises en page CSS](http://fr.learnlayout.com/)*, par Greg Smith.
 
 Mise en page / layout
 ----------
@@ -20,6 +20,8 @@ Mise en page / layout
 Depuis le lancement du CSS en 1996, diverses techniques ont été développées pour créer des mises en page avec ce langage.
 
 Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
+
+![](/cours-web/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
 
 Positionnement avec Float
 ===

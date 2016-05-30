@@ -38,6 +38,12 @@ ul, ol, dl, figure,
 }
 
 
+pre, code {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+}
+
+
 
 /**
  * Images
@@ -81,8 +87,10 @@ li {
 /**
  * Headings
  */
+
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+    font-weight: 300;
+    font-family: $title-font-family;
 }
 
 

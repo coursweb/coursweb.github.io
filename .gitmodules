@@ -1,0 +1,3 @@
+[submodule "cours-html"]
+	path = cours-html
+	url = https://github.com/collectifwp/cours-html

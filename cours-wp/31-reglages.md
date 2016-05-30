@@ -12,12 +12,12 @@ Quelques réglages initiaux qu’il est utile de faire aussi tôt que possible l
 - Permaliens.
 - Commentaires ouverts ou fermés.
 
-1. La visibilité du site
+1) La visibilité du site
 ==
 
-Ce réglage permet d’empêcher l’indexation d’un site par les engins de recherche. Votre site n’apparaîtra donc pas dans les résultats de recherche Google. Attention à ne pas oublier de changer ce réglage lorsque vous finissez la phase développement...
+Ce réglage permet d’empêcher l’indexation d’un site par les engins de recherche. Votre site n’apparaîtra donc pas dans les résultats de recherche Google. Attention à ne pas oublier de changer ce réglage lorsque vous finissez la phase développement!
 
-2. La structure des permaliens
+2) La structure des permaliens
 ==
 
 La structure choisie pour les permaliens de votre site aura un impact important sur le placement de votre site dans les résultats de recherche. En effet, la structure par défaut – monsite.com/?p=123 – ne contiendra pas de mot clé relatif à l’article.  
@@ -30,7 +30,7 @@ Ainsi le permalien de votre article va ressembler à monsite.com/recette-tarte-a
 
 NB: dans les versions de WordPress plus anciennes, la structure Nom de l’article était déconseillée pour des raisons de performance. Depuis la version 3.3 de WordPress, sortie en décembre 2011, ce problème est résolu (ticket #16687). Cette structure peut désormais être utilisée sans pénalisation.
 
-3. Commentaires ouverts ou fermés
+3) Commentaires ouverts ou fermés
 ==
 
 Décidez si les articles de votre site permettront généralement des commentaires, ou pas.
@@ -48,7 +48,7 @@ Attention : l’effet de ce réglage n’est pas rétroactif. Les articles déj
 * Parmi les options proposées dans le champ Modifications groupées, repérer le menu déroulant des Commentaires, et choisir Refuser pour fermer les commentaires.
 * Cliquer sur le bouton Mettre à jour – mission accomplie !
 
-4. Les formats d’images
+4) Les formats d’images
 ==
 
 Configurer les formats des versions *miniatures*, *moyennes* et *grandes* de vos images. Ce réglage se trouve sous *Réglages → Médias*. Les dimensions idéales vont varier en fonction du thème que vous utilisez. Voir ci-dessous le chapitre dédié aux images pour mieux comprendre.

@@ -4,17 +4,38 @@ title: Fontes & typographie
 permalink: /css/typographie
 ---
 
-Depuis les débuts du web, la palette typographique à disposition des designers était limitée à une poignée de fontes, disponibles sur la grande majorité des systèmes d'exploitation.
+Propriétés CSS spécifiques à la typographie:
 
-Entre 2008-2010, tous les navigateurs ont implémenté le CSS3 Fonts Module, permettant de charger des fontes spécifiées par les styles CSS avec la propriété @font-face.
+* font-family
+* font-weight
+
+Mais aussi:
+
+* text-transform
+* text-decoration
 
 Hyphenation, césure
 ----------
 
 Documentation sur la césure (en anglais, hyphenation).
 
-Webfonts
---------
+Macrotypographie du web
+------
+
+![](/cours-web/cours-css/img/macrotypographie-titres.png)
+
+Exemples de styles appliqués aux titres, tirés de la conférence "La macrotypographie du web", par Anne-Sophie Fradier (2010).
+
+CSS3 et Webfonts
+----
+
+Depuis les débuts du web, la palette typographique à disposition des designers était limitée à une poignée de fontes (Arial, Verdana, Georgia, Times, Courier...), disponibles sur la grande majorité des systèmes d'exploitation.
+
+Entre 2008-2010, tous les navigateurs ont implémenté le **CSS3 Fonts Module**, permettant de charger des fontes spécifiées par les styles CSS avec la propriété *@font-face*.
+
+
+@Fontface
+===
 
 La syntaxe @font-face, optimisée (c'est la version proposée par FontSquirrel):
 
@@ -33,13 +54,13 @@ La syntaxe @font-face, optimisée (c'est la version proposée par FontSquirrel):
 
 On notera que les fontes sont proposées dans quatre formats: eot, woff2, woff, ttf.
 
-- eot
-- ttf
-- woff
-- woff2
+- **eot** : format utilisé par Microsoft (Internet Explorer)
+- **ttf**
+- **woff** : format compressé
+- **woff2** : format compressé
 
 Sources de fontes
------------------
+===
 
 Trouver de bonnes fontes sous licence libre:
 

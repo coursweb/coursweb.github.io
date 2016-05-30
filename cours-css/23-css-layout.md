@@ -7,14 +7,12 @@ permalink: /css/layout
 Méthodes de positionnement et mise en page
 ----------
 
-![](img/stores-css.gif)
+![](/cours-web/cours-css/img/stores-css.gif)
 
 Deux bonnes introductions à la mise en page et au positionnement CSS:
 
-*[Introduction au positionnement CSS](http://www.pompage.net/traduction/introduction-au-positionnement-css)*, par Noah Stokes, 2010.    
-L'original [en anglais](http://alistapart.com/article/css-positioning-101).
-
-*[Apprendre les mises en page CSS](http://fr.learnlayout.com/)*, par Greg Smith.
+* [Introduction au positionnement CSS](http://www.pompage.net/traduction/introduction-au-positionnement-css)*, par Noah Stokes, 2010 (aussi [en anglais](http://alistapart.com/article/css-positioning-101)).
+* [Apprendre les mises en page CSS](http://fr.learnlayout.com/)*, par Greg Smith.
 
 Mise en page / layout
 ----------
@@ -44,7 +42,7 @@ Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel d
 
 Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible... notamment le "Holy Grail Layout" (le sant graal de la mise en page), comprenant deux colonnes à largeur fixe, et un contenu central à largeur flexible.
 
-![*Une structure complexe pour obtenir le Holy Grail Layout*](img/holy-grail-div-structure.png)
+![Holy Grail Layout](/cours-web/cours-css/img/holy-grail-div-structure.png)    
 *Une structure complexe pour obtenir le Holy Grail Layout*
 
 Une nouvelle approche: Flexbox
@@ -54,7 +52,7 @@ Candidat à l'inclusion dans le standard CSS.
 
 Passé du statut de "Working Draft" (depuis 2009) à "Candidate Recommendation".
 
-![Flexbox support](img/flexbox-caniuse.png)
+![Flexbox support](/cours-web/cours-css/img/flexbox-caniuse.png)
 *Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
 
 Quelques bonnes ressources pour maîtriser ce module CSS:

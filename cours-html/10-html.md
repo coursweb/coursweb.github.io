@@ -13,15 +13,16 @@ Il vous aidera à:
 - Connaître les balises les plus utiles.
 - Structurer vos documents HTML de manière sémantique.
 
-## Les balises
+Les balises
+==
 
 Le vocabulaire du langage HTML se compose de quelques 120 balises.
 
 Quelques balises présentes depuis le début:
 
-L'hyperlien : `<a>`    
-Le titre : `<h1>` à `<h6>`    
-Le paragraphe : `<p>`
+* L'hyperlien : `<a>`    
+* Le titre : `<h1>` à `<h6>`    
+* Le paragraphe : `<p>`
 
 Un article au sujet des styles de liens:
 [Signalétique des hyperliens](http://letrainde13h37.fr/43/signaletique-hyperliens/), par Romy Duhem-Verdière, 2013

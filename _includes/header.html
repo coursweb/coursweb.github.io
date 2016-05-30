@@ -13,46 +13,53 @@
         </svg>
       </a>
       
+      {% assign url_parts = page.url | split: '/' %}
+    
+      {% assign url_parts_size = url_parts | size %}
 
-
-      <div class="trigger">
+      <div class="trigger first-menu">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% assign page_url_parts = my_page.url | split: '/' %}
+            {% assign page_url_parts_size = page_url_parts | size %}
+            {% if page_url_parts_size <= 2 %}
+              <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>
     </nav>
 
 
-    <div class="testing">
-    Working?
-    {{ page.url }}
 
-    {% assign url_parts = page.url | split: '/' %}
-    {% assign url_parts_size = url_parts | size %}
+    {% if url_parts[1] == 'wp' or url_parts[1] == 'css' or url_parts[1] == 'html'  %}
+      
+      <div class="testing second-menu">
 
-    {{ url_parts_size }}
-
-    {% if url_parts_size > 2 %}
-      works
-    {% endif %}
-
+        <ul>
+        
     {% assign base_url = page.url %}
     
-    <ul>
     {% for node in site.pages %}
-      {% assign node_url_parts = node.url | split: '/' %}
-      {% assign node_url_parts_size = node_url_parts | size %}
-      
-      {% if node.url contains base_url %}
-          <li><a href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
+      {% if node.title %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        
+        {% if node_url_parts[1] == url_parts[1] %}
+        
+            <li><a  class="{% if node.url == page.url %} active{% endif %}"  href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
+        {% endif %}
+
       {% endif %}
     {% endfor %}
-    </ul>
 
-    </div>
+        </ul>
 
-  </div>
+      </div>
+
+    {% endif %}
+
+
+  </div><!-- #wrapper -->
 
 </header>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Texte et formatage
 permalink: /wp/texte-formatage
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Contenus
 permalink: /wp/contenus
 ---
 

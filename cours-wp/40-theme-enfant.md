@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Créer un thème enfant
 permalink: /wp/theme-enfant
 ---
 

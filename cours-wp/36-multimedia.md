@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Multimédia
 permalink: /wp/multimedia
 ---
 

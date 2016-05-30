@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Menus et widgets
 permalink: /wp/menus-widgets
 ---
 

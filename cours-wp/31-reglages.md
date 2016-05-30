@@ -1,6 +1,6 @@
 ---
 layout: page
-title: WordPress
+title: Réglages
 permalink: /wp/reglages
 ---
 

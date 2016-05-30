@@ -4,9 +4,6 @@ title: Ressources WordPress
 permalink: /wp/ressources
 ---
 
-Ressources WordPress
----
-
 Pour en savoir plus...
 
 Forums de support en français: 
@@ -31,13 +28,16 @@ Le Codex WordPress francophone: http://codex.wordpress.org/fr:Accueil
 
 
 La communauté de WordPress
+---
 
 Une communauté active d’utilisateurs s’est formée autour de WordPress, donnant lieu à des rencontres (meetups) et des conférences nommées WordCamps. En 2013, 71 WordCamps se sont déroulés dans le monde, et 474 sessions ont été enregistrées et publiées sur WordPress.tv
-Un WordCamp Suisse s’est tenu les 3 et 4 mai à Zurich. Il sera sans doute répété en 2015.
+
+Un WordCamp Suisse a eu lieu à Zurich en 2014 et 2015. L'édition 2016 se tiendra à Genève en fin d'année.
 
 Le Meetup WordPress Genève
+---
 
 À Genève, le groupe meetup WordPress organise des conférences et workshops gratuits, pour utilisateurs débutants et avancés, environ une fois par mois. 
 
 Inscrivez-vous sur : 
-http://www.meetup.com/geneva-wordpress/
+[http://www.meetup.com/geneva-wordpress/](http://www.meetup.com/geneva-wordpress/)

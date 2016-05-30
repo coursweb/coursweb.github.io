@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contenus de WordPress
+title: Les types de contenus
 permalink: /wp/custom-post-types
 ---
 

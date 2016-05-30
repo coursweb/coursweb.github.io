@@ -7,6 +7,8 @@ permalink: /css/
 Introduction au CSS.
 -------
 
+![CSS is awesome](img/css-is-awesome.jpeg)
+
 Le langage CSS (Cascading Style Sheets) est apparu en 1997, afin de proposer une meilleure manière de créer des sites internet, en séparant le contenu (HTML) de la présentation.
 
 Il y a eu différentes versions. La spécification CSS 2 a été publiée en 1998. Une version révisée, CSS 2.1, a été en travail pendant des années, avant d'atteindre le statut de [Recommandation W3C](https://www.w3.org/TR/CSS2/) en 2011. La spécification CSS 3,  a été fragmentée en de nombreux modules, dont certains sont déjà bien implémentés dans les navigateurs, et utilisés au quotidien (p.ex. Media Queries, Flexbox, Backgrounds and Borders...).

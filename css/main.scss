@@ -6,22 +6,26 @@
 
 
 // Our variables
-$base-font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
-$title-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-family: Karmilla-Web, Helvetica, Arial, sans-serif;
+$title-font-family: $base-font-family;
+$code-font-family: Monoist-Web, monospace;
 $base-font-size:   16px;
-$base-font-weight: 300;
-$title-font-weight: 300;
+$base-font-weight: 400;
+$bold-font-weight: 700;
+$title-font-weight: 900;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background-color: #fffbf2; // #fdfdfd
+$brand-color:      #00d2b8;
+$code-background:  #fff; // lighten($brand-color, 55%);
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 30%); // = #ededed;
+$grey-color-pale:  lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -30,7 +34,9 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+// Sidebar
+$sidebar-ratio:    25%;
+$content-ratio:    100 - $sidebar-ratio;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -48,7 +54,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "fonts",
         "base",
         "layout",
+        "overrides",
         "syntax-highlighting"
 ;

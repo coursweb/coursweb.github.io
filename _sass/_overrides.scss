@@ -1,0 +1,133 @@
+/**
+ * Secondary Menu
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	color: $grey-color-dark
+}
+
+.site-header {
+	padding-bottom: 12px;
+}
+
+.site-title {
+	margin-right: 1em;
+	line-height: 1;
+	margin-top: 12px;
+}
+
+.site-nav {
+	float: left;
+}
+
+.site-nav .page-link:not(:last-child) {
+	margin-right: 0;
+}
+ 
+.site-nav .active {
+	background-color: $background-color;
+	// border: 1px solid $brand-color;
+	text-decoration: underline;
+}
+
+img + br + em {
+	margin-top: -2em;
+	display: block;
+}
+
+img + br {
+}
+
+.post-content em a {
+	font-weight: 700;
+}
+
+.post-content .footnotes::before {
+	content: 'Notes';
+	display: block;
+	font-size: 140%;
+	font-weight: 700;
+	margin: 2.5em 0 1em 0;
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid $grey-color-pale;
+}
+
+.post-content .footnotes {
+	font-size: 90%;
+	line-height: 1.2;
+}
+
+.site-header .wrapper {
+	max-width: 100%;
+}
+
+.second-menu {
+ 
+    border: 0px solid blue;
+    /* float: left;
+    clear: left; */
+    /* list-style: none; */
+
+    .active {
+        color: $brand-color;
+    }
+
+    ul {
+		padding-left: 1em;
+		color: $grey-color-pale;
+    }
+
+    li {
+        list-style-type: lower-roman;
+    }
+
+    a {
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        color: black;
+        display: block;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) { 
+	
+	.second-menu {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 800px) { 
+	
+	.second-menu li:after {
+    	content: none;
+	}
+	
+	.second-menu .active {
+		/* background: #eee; */
+		text-decoration: underline;
+	}
+	
+	.secondary-menu {
+		width: $sidebar-ratio;
+		float: left; 
+		position: fixed;
+		background: $background-color;
+		padding-top: 30px;
+	}
+	
+	.page-content,
+	.site-footer {
+		width: $content-ratio;
+		max-width: 100%;
+		padding-left: $sidebar-ratio;
+	}
+	
+	.wrapper {
+		margin-left: 0;
+	}
+
+}
+

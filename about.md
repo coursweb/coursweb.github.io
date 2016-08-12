@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Les matières traitées sont: le langage HTML, les styles CSS, la conception de sites avec WordPress.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausanne), à l'Ecole d'Art Appliqués (La Chaux-de-Fonds), ainsi que les modules de formation du [Collectif WP](http://collectifwp.ch).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Licence
+==
+
+Ce support de cours est mis à disposition sous les termes de la licence **CC-BY-SA**.
+
+Vous pouvez donc l'utiliser librement, y compris dans un contexte professionnel et commercial, à condition de respecter la licence.
+
+Technique
+==
+
+Ce site est construit avec [Jekyll](http://jekyllrb.com/), un générateur de sites. Il utilise le thème de base de Jekyll, avec de petites modifications.

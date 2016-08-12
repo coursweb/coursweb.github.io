@@ -12,7 +12,7 @@
 
 .site-title {
     font-size: 26px;
-    font-weight: 300;
+    font-weight: $bold-font-weight;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -23,53 +23,6 @@
         color: $grey-color-dark;
     }
 }
-
-
-.second-menu {
- 
-    border: 0px solid blue;
-    float: left;
-    clear: left;
-    list-style: none;
-
-    .active {
-        color: violet;
-    }
-
-    ul {
-        margin-left: -0.5em;
-        margin-bottom: 1em;
-        float: left;
-    }
-
-    li {
-        list-style: none;
-        list-style-type: none;
-        display: inline;
-    }
-
-    a {
-        padding: 0.5em;
-        color: black;
-    }
-
-
-    a:after {
-        display: block;
-        float: left;
-    }
-
-    li:after {
-        content: ' / ';
-    }
-
-    li:last-child:after {
-        content: '';
-    }
-
-}
-
-
 
 
 .site-nav {
@@ -98,8 +51,8 @@
     }
 
     .active {
-        color: violet;
-        background: #eee;
+        color: $brand-color;
+        background: $grey-color-light;
     }
 
     @include media-query($on-palm) {
@@ -279,7 +232,7 @@
     h1, h2, h3, h4, h5, h6 {
         clear: left;
         
-        border-bottom: 2px solid #ccc;
+        border-bottom: 2px solid $grey-color-pale;
 
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -310,6 +263,6 @@
     }
 
     strong, b {
-        font-weight: 400;
+        font-weight: $bold-font-weight;
     }
 }

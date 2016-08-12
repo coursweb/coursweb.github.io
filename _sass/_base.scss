@@ -39,7 +39,7 @@ ul, ol, dl, figure,
 
 
 pre, code {
-    font-family: "Source Code Pro", monospace;
+    font-family: $code-font-family;
     font-weight: 400;
 }
 
@@ -91,7 +91,7 @@ li {
  */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 700;
     font-family: $title-font-family;
 }
 
@@ -142,7 +142,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $code-background;
 }
 
 code {

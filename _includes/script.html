@@ -1,0 +1,25 @@
+<script>
+
+// alert(location.hostname);
+
+for (var links = document.links, i = 0, a; a = links[i]; i++) {
+        if (a.host !== location.host) {
+                a.target = '_blank';
+        }
+}
+
+// source: http://stackoverflow.com/a/12042044/1904769
+
+
+
+// var as = document.getElementsByTagName('a');
+// var re = /^https?:\/\/([^\/]*)\//;
+// for (var i = 0, l = as.length; i < l; i++) {
+//     var href = as[i].href;
+//     var matches = href.match(re);
+//     if (matches[1] && matches[1] != location.hostname) {
+//         as[i].setAttribute("target","_blank");
+//     }
+// }
+
+</script>

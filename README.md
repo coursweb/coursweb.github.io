@@ -11,7 +11,7 @@ Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausa
 
 ## Licence
 
-Ce support de cours est mis à disposition sous les termes de la licence CC-BY-SA.
+Ce support de cours est mis à disposition sous les termes de la licence **CC-BY-SA**.
 
 Vous pouvez donc l'utiliser librement, y compris dans un contexte professionnel et commercial, à condition de respecter la licence.
 
@@ -26,6 +26,7 @@ Les contenus sont rédigés en syntaxe Markdown.
 Les auteurs et contributeurs sont:
 
 * Manuel Schmalstieg – artiste, développeur et enseignant.
+* ...
 
 ## Technique
 

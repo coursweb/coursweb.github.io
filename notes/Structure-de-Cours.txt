@@ -1,0 +1,72 @@
+Structure de cours: 
+
+Structure du livre "InterACT with web standards" (2010)
+
+Table of Contents
+
+Part I : Preparation and Background Knowledge
+
+1: InterACT
+2: Tools
+3: Learning on the Web
+4: Internet Fundamentals
+5: Writing for the Web
+
+Part II : Planning a Website
+
+6: Information Architecture Intro
+7: Site Planning
+8: Content Analysis
+9: Content Strategy
+
+Part III : Implementation - HTML and CSS Fundamentals, and Accessibility
+
+10: HTML Intro (History, syntax, DOM, semantics, best practices, HTML5)
+11: CSS Intro (History, internal / external, shorthand, units, colors, selectors, cascade, inheritance, importance, specificity, CSS3)
+12: <head> (doctype, lang, title, meta)
+13: Headings and Paragraphs (text styles, semantic markup)
+14: Whitespace (box model, margin collapsing)
+15: Links
+16: Images
+17: Lists
+18: Tables
+19: Forms
+20: Floats
+21: Positioning
+22: Accessibility Intro
+23: Accessibility Helps
+24: Accessibility Testing
+25: Bringing it All Together
+
+***
+
+Structure du livre "Developing with Web standards" (John Allsopp, 2010)
+
+Part I  : Foundations
+
+ 1: Before You Begin
+ 2: Philosophies and Techniques (The Browser Wars, The Dawn of Standards...)
+ 3: Markup (HTML and XHTML, A Short History of HTML, Links, Forms, Tables...)
+ 4: Presentation (What is CSS, Basic CSS Syntax, Basic Page Layout, Selectors...)
+ 5: The DOM (DOM Tree, Events, Libraries...)
+ 6: Accessibility
+
+Part II : Real-World Development
+
+ 7: Working With, Around, and Against Browsers (Browser Modes, Common Bugs...)
+ 8: Best Practices for Modern Markup (Code Readability, Markup and SEO, Microformats...)
+ 9: CSS-Based Page Layouts (CSS Positioning, Float-Based Layouts...)
+10: CSS Resets and Frameworks
+
+Part III : Real-World Development
+
+11: HTML5
+12: CSS3 and the Future of CSS (New Selectors...)
+13: New Properties in CSS3 (Shadow Effects, Border-Radius, RGBa Colors, Multi-Column Text, Transitions...)
+14: Targetting Media with CSS (Media Queries)
+15: Web Fonts (Brief History, Embedding Fonts)
+16: SVG and the Canvas: Rich Graphics in the Browser
+
+***
+
+-inurl:htm -inurl:html intitle:”index of” “Norah Jones” mp3

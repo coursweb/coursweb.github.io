@@ -30,8 +30,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 }
 
+.post-content img {
+	margin: 0.5em 0;
+}
+
 img + br + em {
-	margin-top: -2em;
+	// margin-top: -2em;
 	display: block;
 }
 

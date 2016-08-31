@@ -9,7 +9,9 @@
 title: Cours Programmation Web
 email: ms@ms-studio.net
 description: > # this means to ignore newlines until "baseurl:"
-  Un support de cours pour apprendre la programmation web. Sujets: HTML, CSS, WordPress.
+  Un support de cours pour apprendre la programmation web. <br/>
+  Sujets: HTML, CSS, WordPress. <br/>
+  Licence: CC-BY-SA.
 baseurl: "/cours-web" # the subpath of your site, e.g. /blog
 url: "http://collectifwp.github.io" # the base hostname & protocol for your site
 repository: cours-web/collectifwp.github.io.

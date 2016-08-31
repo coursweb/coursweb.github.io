@@ -50,7 +50,7 @@ Et:
 sudo gem install bundler
 ```
 
-Une fois que c'est fait, naviguer avec le terminal dans le répertoire du site, et exécuter la commande suivante:
+Une fois que c'est fait, naviguer avec le terminal dans le répertoire du site, puis exécuter la commande suivante:
 
 ```
 bundle exec jekyll serve

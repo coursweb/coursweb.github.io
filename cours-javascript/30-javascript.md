@@ -4,7 +4,9 @@ title: JavaScript
 permalink: /javascript/
 ---
 
-Le **JavaScript** n'a rien à voir avec **Java**, un autre language de programmation. Il a été créé en 1995, pour Netscape Navigator, par Brendan Eich. Le langage aurait été créé en 10 jours, pour coïncider avec la sortie de Netscape 2.0. Microsoft, pour son navigateur Internet Explorer, a fait du "reverse-engineering", pour introduire en 1996 JScript, dans IE version 3. En fin 1996, Netscape entreprend des démarches pour faire de JavaScript un standard (qui s'appelle ECMAScript). 
+Le **JavaScript** n'a rien à voir avec **Java**, un autre language de programmation. 
+
+Il a été créé en 1995, pour Netscape Navigator, par Brendan Eich (en 10 jours, selon la légende, pour coïncider avec la sortie de Netscape 2). En fin 1996, Netscape entreprend des démarches pour faire de JavaScript un standard (qui s'appelle ECMAScript). 
 
 Ce standard est révisé régulièrement, la 6ème version (ES6) a été finalisée en juin 2015.
 
@@ -30,14 +32,14 @@ Dans son article, *[Thank you, jQuery](https://adactio.com/journal/10806)*, publ
 
 Il est désormais nettement plus facile de se passer de jQuery, et d'écrire du "Plain Vanilla JavaScript". L'objectif ultime d'un outil comme jQuery serait de ne plus être nécessaire.
 
-Le site [Vanilla JS](http://vanilla-js.com/) expose sous un mode parodique (en se présentant comme une énième librairie JavaScript) les avantages (en termes de vitesse) à utiliser du JavaScript pur, plutôt que de se reposer sur une librairie telle que jQuery, Prototype JS, Dojo, MooTools.
+Le site [Vanilla JS](http://vanilla-js.com/) expose sous un mode parodique (en se présentant comme une énième librairie JavaScript) les avantages (en termes de vitesse) à utiliser du JavaScript pur, plutôt que de se reposer sur une librairie telle que jQuery, Prototype, Dojo, MooTools.
 
 ![](/cours-web/cours-html/img/Strip-Prendre-le-train-en-marche-650-final1.jpg)
 
 Préprocesseurs:
 ===
 
-On a vu l'apparition de préprocesseurs (comme SASS ou LESS) pour le CSS. Cela existe aussi pour le JavaScript:
+On a vu l'apparition de préprocesseurs (comme SASS ou LESS) pour faciliter l'écriture du CSS. Cela existe aussi pour le JavaScript:
 
 **CoffeeScript** est un langage de programmation plus épuré que le JavaScript, pouvant être automatiquement converti en JavaScript normal.
 

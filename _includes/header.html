@@ -38,7 +38,11 @@
 
 <nav class="secondary-menu">
 
-	{% if url_parts[1] == 'wp' or url_parts[1] == 'css' or url_parts[1] == 'html'  %}
+	{%  if url_parts[1] == 'wp' 
+		or url_parts[1] == 'css' 
+		or url_parts[1] == 'html' 
+		or url_parts[1] == 'divers'  
+	%}
       
       <div class="testing second-menu">
         <ul>

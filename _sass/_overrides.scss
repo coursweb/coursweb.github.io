@@ -115,6 +115,20 @@ img + br {
 	}
 }
 
+@media screen and (min-width: 600px) { 
+
+	a.index-link {
+		width: 30%;
+		font-size: 160%;
+	}
+	a.index-link:nth-child(even) {
+		margin-right: 4%;
+	}
+	a.index-link:nth-child(3n+3) {
+		margin-right: 0;
+	} 
+
+}
 
 @media screen and (min-width: 800px) { 
 	
@@ -145,6 +159,8 @@ img + br {
 	.wrapper {
 		margin-left: 0;
 	}
+	
+	
 
 }
 

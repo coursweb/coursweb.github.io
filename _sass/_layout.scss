@@ -266,3 +266,31 @@
         font-weight: $bold-font-weight;
     }
 }
+
+/**
+ * Index page
+ */
+ 
+a.index-link {
+	display: block;
+	float: left;
+	width: 48%;
+	padding-bottom: 7%;
+	padding-top: 7%;
+	text-align: center;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	
+	color: #fff;
+	font-size: 130%;
+	background-color: darken($brand-color, 5%);
+}
+
+a.index-link:hover {
+	background-color: darken($brand-color, 15%);
+	text-decoration: none;
+}
+
+a.index-link:nth-child(even) {
+	margin-right: 0;
+}

@@ -1,0 +1,31 @@
+<nav class="secondary-menu">
+
+  {%  if url_parts[1] == 'wp' 
+    or url_parts[1] == 'css' 
+    or url_parts[1] == 'html' 
+    or url_parts[1] == 'divers'  
+  %}
+      
+      <div class="second-menu">
+        <ul>
+        
+    {% assign base_url = page.url %}
+    
+    {% for node in site.pages %}
+      {% if node.title %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        
+        {% if node_url_parts[1] == url_parts[1] %}
+        
+            <li><a  class="{% if node.url == page.url %} active{% endif %}"  href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
+        {% endif %}
+
+      {% endif %}
+    {% endfor %}
+
+        </ul>
+      </div>
+
+    {% endif %}
+</nav>

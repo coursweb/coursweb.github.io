@@ -4,3 +4,12 @@
 [submodule "cours-javascript"]
 	path = cours-javascript
 	url = https://github.com/collectifwp/cours-javascript
+[submodule "cours-css"]
+	path = cours-css
+	url = https://github.com/collectifwp/cours-css
+[submodule "cours-wp"]
+	path = cours-wp
+	url = https://github.com/collectifwp/cours-wp
+[submodule "cours-html"]
+	path = cours-html
+	url = https://github.com/collectifwp/cours-html

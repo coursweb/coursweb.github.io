@@ -11,15 +11,17 @@ Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausa
 
 ## Licence
 
-Ce support de cours est mis à disposition sous les termes de la licence **[CC-BY-SA](https://creativecommons.org/licenses/by/4.0/)**.
+Les contenus de ce support de cours sont mis à disposition sous les termes de la licence **[CC-BY-SA](https://creativecommons.org/licenses/by/4.0/)** (la même licence que Wikipédia).
 
-Vous pouvez donc l'utiliser librement, y compris dans un contexte professionnel et commercial, à condition de respecter la licence.
+Vous êtes donc invités à l'utiliser librement, y compris dans un contexte professionnel et commercial, à condition de respecter la licence.
+
+Le code du thème Jekyll (dérivé de [Minima](https://github.com/jekyll/minima)) est mis à disposition sous la licence MIT.
 
 ## Contribuer
 
 Les corrections et améliorations sont les bienvenues, et se font par l'intermédiaire du système GIT. Les chapitres HTML, CSS et WordPress sont des "repositories", que vous pouvez cloner, forker, compléter et proposer à la publication.
 
-Les contenus sont rédigés en syntaxe [Markdown](https://openclassrooms.com/courses/redigez-en-markdown).
+Les contenus sont rédigés en syntaxe [Markdown](https://collectifwp.github.io/cours-web/wp/texte-formatage#rdiger-en-markdown).
 
 ## Les auteurs
 

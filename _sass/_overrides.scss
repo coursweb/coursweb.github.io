@@ -30,6 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 }
 
+.page-content {
+	clear: left;
+	padding-top: 30px; /* Overridden by MediaQuery */
+}
+
 .post-content img {
 	margin: 0.5em 0;
 }
@@ -79,11 +84,10 @@ img + br {
 }
 
 .second-menu {
- 
-    border: 0px solid blue;
-    /* float: left;
-    clear: left; */
-    /* list-style: none; */
+	
+	@extend %clearfix;
+
+    border-bottom: 1px solid $grey-color-light;
 
     .active {
         color: $brand-color;
@@ -92,27 +96,56 @@ img + br {
     ul {
 		padding-left: 1em;
 		color: $grey-color-pale;
+		margin-left: -0.4em;
     }
-
+    
     li {
-        list-style-type: lower-roman;
+        list-style-type: none;
+        float: left;
     }
-
+	
+	li:after {
+    	content: "— ";
+	}
+		
+	li:last-of-type:after {
+    	content: none;
+	}
+	
     a {
         padding: 0.2em 0.5em 0.2em 0.5em;
         color: black;
-        display: block;
+        display: inline;
     }
+    
+    li:first-of-type a {
+    	/* padding-left: 0.15em; */
+	}
 
 
 }
 
-
-@media screen and (max-width: 800px) { 
+.page-content .secondary-menu {
 	
-	.second-menu {
-		display: none;
-	}
+	border-top: 1px solid $grey-color-light;
+	
+}
+
+.page-content .second-menu {
+	
+	border-bottom: 0;
+	padding-bottom: 0;
+	padding-top: $spacing-unit;
+}
+
+/* 
+ * Media Queries 
+ */
+
+@media screen and (max-width: 799px) { 
+ 	.second-menu {
+ 		padding-bottom: 12px;
+ 	}
 }
 
 @media screen and (min-width: 600px) { 
@@ -130,23 +163,52 @@ img + br {
 
 }
 
-@media screen and (min-width: 800px) { 
+@media screen 
+	and (min-width: 800px)  
+	and (min-height: 600px) { 
 	
-	.second-menu li:after {
-    	content: none;
-	}
-	
-	.second-menu .active {
-		/* background: #eee; */
-		text-decoration: underline;
-	}
-	
+
 	.secondary-menu {
 		width: $sidebar-ratio;
 		float: left; 
 		position: fixed;
 		background: $background-color;
 		padding-top: 30px;
+	}
+	
+	.second-menu {
+		
+		border-bottom: 0px;
+		
+		ul {
+			margin-left: $spacing-unit;
+		}
+		
+		li {
+        	list-style-type: lower-roman;
+        	float: none;
+    	}
+    	
+    	li:after {
+    		content: none;
+		}
+		
+		a {
+        	display: block;
+    	}
+		
+		.active {
+		/* background: #eee; */
+			text-decoration: underline;
+		}
+	}
+	
+	.page-content .second-menu {
+		display: none;
+	}
+	
+	.page-content {
+    	padding-top: $spacing-unit;
 	}
 	
 	.page-content,
@@ -160,7 +222,5 @@ img + br {
 		margin-left: 0;
 	}
 	
-	
-
 }
 

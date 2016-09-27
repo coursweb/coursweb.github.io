@@ -83,6 +83,11 @@ img + br {
 	max-width: 100%;
 }
 
+.lettrine:first-letter {
+  font-size: 200%;
+  float: left;
+}
+
 .second-menu {
 	
 	@extend %clearfix;

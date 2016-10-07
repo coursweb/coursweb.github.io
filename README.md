@@ -1,7 +1,8 @@
-# cours-programmation-web
+# Cours Programmation Web
+
 Support de cours programmation web
 
-En ligne sous: [http://collectifwp.github.io/cours-web/](http://collectifwp.github.io/cours-web/)
+En ligne sous: [http://cours-web.ch](http://cours-web.ch/)
 
 ## À propos
 
@@ -27,7 +28,7 @@ Les contenus sont rédigés en syntaxe [Markdown](https://collectifwp.github.io/
 
 Les auteurs et contributeurs sont:
 
-* Manuel Schmalstieg – artiste, développeur et enseignant.
+* [Manuel Schmalstieg](https://github.com/ms-studio) – artiste, développeur et enseignant.
 * ...
 
 ## Technique
@@ -58,7 +59,7 @@ Une fois que c'est fait, naviguer avec le terminal dans le répertoire du site, 
 bundle exec jekyll serve
 ```
 
-Si cela fonctionne, le terminal vous indiquera l'URL pour accéder au serveur, p.ex. http://127.0.0.1:4000/cours-web/
+Si cela fonctionne, le terminal vous indiquera l'URL pour accéder au serveur, p.ex. [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
 ### Autres commandes utiles
 

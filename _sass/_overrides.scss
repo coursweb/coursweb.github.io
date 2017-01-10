@@ -6,6 +6,20 @@ h1, h2, h3, h4, h5, h6 {
 	color: $grey-color-dark
 }
 
+hr {
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	border: none;
+    height: 2px;
+    background-color: $grey-color-pale;
+}
+
+
+figcaption {
+	font-style: italic;
+	font-size: 1em;
+}
+
 .site-header {
 	padding-bottom: 12px;
 }

@@ -10,16 +10,27 @@ for (var links = document.links, i = 0, a; a = links[i]; i++) {
 
 // source: http://stackoverflow.com/a/12042044/1904769
 
+// insertion de légende sous les images:
+
+var images = document.querySelectorAll('img'), i = images.length;
+
+while (i--) {
+    var legend = images[i].getAttribute("alt");
+    if (legend) {
+    	
+    	// préparer la légende:
+		var node = document.createElement("figcaption");
+		var textnode = document.createTextNode(legend);
+		node.appendChild(textnode); // puts text inside html
+
+		// insérer après l'image:
+		images[i].parentNode.insertBefore(node, images[i].nextSibling);
+
+	}
+    
+    // define alt text
+}
 
 
-// var as = document.getElementsByTagName('a');
-// var re = /^https?:\/\/([^\/]*)\//;
-// for (var i = 0, l = as.length; i < l; i++) {
-//     var href = as[i].href;
-//     var matches = href.match(re);
-//     if (matches[1] && matches[1] != location.hostname) {
-//         as[i].setAttribute("target","_blank");
-//     }
-// }
 
 </script>

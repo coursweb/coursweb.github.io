@@ -38,6 +38,8 @@ Ce site est construit avec [Jekyll](http://jekyllrb.com/), un générateur de si
 
 La plus importante modification concerne le menu, le code se trouve dans _includes/header.html.
 
+Le code du menu de niveau 2 se trouve dans _includes/nav-second.html.
+
 ## Faire tourner Jekyll localement
 
 Pour faire tourner le site en local, il faut d'abord installer Jekyll.

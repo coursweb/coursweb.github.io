@@ -20,3 +20,7 @@ github_username:  ms-studio
 
 # Build settings
 markdown: kramdown
+
+# Custom settings
+
+chapters: [ "html", "css", "js", "wp", "git", "outils", "divers" ]

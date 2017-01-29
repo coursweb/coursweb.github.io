@@ -13,3 +13,6 @@
 [submodule "cours-html"]
 	path = cours-html
 	url = https://github.com/collectifwp/cours-html
+[submodule "cours-git"]
+	path = cours-git
+	url = https://github.com/coursweb/cours-git

@@ -71,3 +71,11 @@ Mettre à jour Rubygems:
 ```
 sudo gem update --system
 ```
+
+### Notes diverses
+
+Styles SASS/CSS et couleurs... 
+
+Où est donc définie la couleur #828282 ?
+
+Cette couleur est définie par la variable $grey-color, elle-même définie dans css/main.scss

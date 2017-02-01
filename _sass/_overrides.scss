@@ -1,6 +1,4 @@
-/**
- * Secondary Menu
- */
+
 
 h1, h2, h3, h4, h5, h6 {
 	color: $grey-color-dark
@@ -16,8 +14,10 @@ hr {
 
 
 figcaption {
-	font-style: italic;
-	font-size: 1em;
+	font-style: normal;
+	font-size: 0.85em;
+	padding-left: 0em;
+	color: $grey-color;
 }
 
 .site-header {
@@ -51,6 +51,13 @@ figcaption {
 
 .post-content img {
 	margin: 0.5em 0;
+	max-height: 45vh;
+	cursor: zoom-in;
+}
+
+.mfp-figure figure,
+img.mfp-img {
+	border: 0;
 }
 
 .post-content tbody {
@@ -101,6 +108,10 @@ img + br {
   font-size: 200%;
   float: left;
 }
+
+/**
+ * Secondary Menu
+ */
 
 .second-menu {
 	

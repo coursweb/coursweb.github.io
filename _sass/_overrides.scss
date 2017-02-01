@@ -55,6 +55,11 @@ figcaption {
 	cursor: zoom-in;
 }
 
+.post-content img.large-image {
+	max-height: 100%;
+	cursor: auto;
+}
+
 .mfp-figure figure,
 .mfp-content img.mfp-img {
 	border: 0;

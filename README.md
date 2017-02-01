@@ -79,3 +79,7 @@ Styles SASS/CSS et couleurs...
 Où est donc définie la couleur #828282 ?
 
 Cette couleur est définie par la variable $grey-color, elle-même définie dans css/main.scss
+
+Classes CSS et Markdown... est-il possible de donner une classe à un élément?
+
+Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-list-definitions

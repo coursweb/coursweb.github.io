@@ -11,4 +11,29 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="source">
+	
+		{% assign path_parts = page.path | split: '/' %}
+		
+		{% if path_parts[0] == 'cours-html' %}
+			{% assign giturl = 'https://github.com/coursweb/cours-html/' %}
+		{% elsif path_parts[0] == 'cours-css' %}
+			{% assign giturl = 'https://github.com/coursweb/cours-css/' %}
+		{% elsif path_parts[0] == 'cours-git' %}
+			{% assign giturl = 'https://github.com/coursweb/cours-git/' %}
+		{% elsif path_parts[0] == 'cours-outils' %}
+			{% assign giturl = 'https://github.com/coursweb/cours-outils/' %}
+		{% elsif path_parts[0] == 'cours-divers' %}
+			{% assign giturl = 'https://github.com/coursweb/cours-divers/' %}
+		{% elsif path_parts[0] == 'cours-wp' %}
+			{% assign giturl = 'https://github.com/collectifwp/cours-wp/' %}
+		{% elsif path_parts[0] == 'cours-javascript' %}
+			{% assign giturl = 'https://github.com/collectifwp/cours-javascript/' %}
+		{% endif %}
+
+  		{% if giturl %}
+  			(<a href="{{ giturl }}edit/master/{{ path_parts[1] }}">modifier cette page sur GitHub</a>)
+  		{% endif %}
+  </div>
+
 </article>

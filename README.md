@@ -76,10 +76,12 @@ sudo gem update --system
 
 Styles SASS/CSS et couleurs... 
 
-Où est donc définie la couleur #828282 ?
+**Où est donc définie la couleur #828282 ?**
 
 Cette couleur est définie par la variable $grey-color, elle-même définie dans css/main.scss
 
-Classes CSS et Markdown... est-il possible de donner une classe à un élément?
+**Classes CSS et Markdown... est-il possible de donner une classe à un élément?**
 
 Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-list-definitions
+
+Exemple: dans cours-javascript/400-javascript.md on ajoute une classe (.large-image) à des images de grande taille, pour conserver leur lisibilité. On ajoute donc le code `{:id: .large-image}` à la suite de la balise image.

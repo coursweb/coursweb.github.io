@@ -5,13 +5,13 @@ Support de cours programmation web
 - En ligne sous: [http://cours-web.ch](http://cours-web.ch/)
 - Code disponible sous: [https://github.com/coursweb](https://github.com/coursweb)
 
-## À propos
+## À propos
 
 Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Les matières traitées sont: le langage HTML, les styles CSS, la conception de sites avec WordPress.
 
 Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausanne), à l'Ecole d'Art Appliqués de La Chaux-de-Fonds, ainsi que les modules de formation du [Collectif WP](http://collectifwp.ch) (Genève).
 
-## Licence
+## Licence
 
 Les contenus de ce support de cours sont mis à disposition sous les termes de la licence **[CC-BY-SA](https://creativecommons.org/licenses/by/4.0/)** (la même licence que Wikipédia).
 
@@ -19,7 +19,7 @@ Vous êtes donc invités à l'utiliser librement, y compris dans un contexte pro
 
 Le code du thème Jekyll (dérivé de [Minima](https://github.com/jekyll/minima)) est mis à disposition sous la licence MIT.
 
-## Contribuer
+## Contribuer
 
 Les corrections et améliorations sont les bienvenues, et se font par l'intermédiaire du système GIT. Les chapitres HTML, CSS et WordPress sont des "repositories", que vous pouvez cloner, forker, compléter et proposer à la publication.
 
@@ -32,7 +32,7 @@ Les auteurs et contributeurs sont:
 * [Manuel Schmalstieg](https://github.com/ms-studio) – artiste, développeur et enseignant.
 * ...
 
-## Technique
+## Technique
 
 Ce site est construit avec [Jekyll](http://jekyllrb.com/), un générateur de sites. Il utilise le thème de base de Jekyll, avec de petites modifications.
 
@@ -40,7 +40,7 @@ La plus importante modification concerne le menu, le code se trouve dans _includ
 
 Le code du menu de niveau 2 se trouve dans _includes/nav-second.html.
 
-## Faire tourner Jekyll localement
+## Faire tourner Jekyll localement
 
 Pour faire tourner le site en local, il faut d'abord installer Jekyll.
 

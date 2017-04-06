@@ -18,23 +18,9 @@
       {% assign url_parts_size = url_parts | size %}
 
       <div class="trigger first-menu">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            {% assign page_url_parts = my_page.url | split: '/' %}
-            {% assign page_url_parts_size = page_url_parts | size %}
-            {% if page_url_parts_size <= 2 %}
-              
-              {% assign path_parts = my_page.path | split: '/' %}
 
-              {% if path_parts[1] != 'README.md' %}
+        {% include nav-primary.html %}
 
-                <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-
-              {% endif %}
-            
-            {% endif %}
-          {% endif %}
-        {% endfor %}
       </div>
     </nav>
 

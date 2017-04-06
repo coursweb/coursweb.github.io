@@ -17,8 +17,13 @@ layout: default
             {% assign page_url_parts_size = page_url_parts | size %}
             {% if page_url_parts_size <= 2 %}
             	{% if my_page.title != "About" %}
-              <a class="index-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            	{% endif %}
+
+                {% assign path_parts = my_page.path | split: '/' %}
+                {% if path_parts[1] != 'README.md' %}
+
+                  <a class="index-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            	  {% endif %}
+              {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}

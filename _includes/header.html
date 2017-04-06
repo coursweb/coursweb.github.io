@@ -23,8 +23,10 @@
             {% assign page_url_parts = my_page.url | split: '/' %}
             {% assign page_url_parts_size = page_url_parts | size %}
             {% if page_url_parts_size <= 2 %}
+              
+              {% assign path_parts = page.path | split: '/' %}
 
-              <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }} / {{ path_parts[0] }}</a>
             
             {% endif %}
           {% endif %}

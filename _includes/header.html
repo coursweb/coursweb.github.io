@@ -26,7 +26,11 @@
               
               {% assign path_parts = my_page.path | split: '/' %}
 
-              <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }} / {{ path_parts[1] }}</a>
+              {% if path_parts[1] != 'README.md' %}
+
+                <a class="page-link{% if page_url_parts[1] == url_parts[1] %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+              {% endif %}
             
             {% endif %}
           {% endif %}

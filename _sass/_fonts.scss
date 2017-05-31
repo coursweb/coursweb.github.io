@@ -18,11 +18,15 @@
 	url('../fonts/karmilla-bold.woff') format('woff');
 }
 
-
 @font-face {
 	font-family: 'Monoist-Web';
 	font-weight: 400;
 	font-style: normal;
 	src: url('../fonts/monoist.woff2') format('woff2'),
 	url('../fonts/monoist.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Genericons-Neue";
+  src: url('http://cours-web.ch/fonts/Genericons-Neue.woff2') format('woff2');
 }

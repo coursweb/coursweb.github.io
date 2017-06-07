@@ -279,10 +279,13 @@
 /**
  * Index page
  */
- 
+
+
 a.index-link {
 	display: block;
+    position: relative;
 	float: left;
+    z-index: 2;
 	width: 48%;
 	padding-bottom: 7%;
 	padding-top: 7%;
@@ -303,3 +306,4 @@ a.index-link:hover {
 a.index-link:nth-child(even) {
 	margin-right: 0;
 }
+

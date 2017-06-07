@@ -263,3 +263,71 @@ img + br {
 	
 } /*end min W 800px H 600px */
 
+
+/**
+ * Grid Layout
+ */
+
+ @supports (display: grid) {
+    
+    .index-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    a.index-link {
+        width: 100%;
+        float: none;
+        height: 1fr;
+        line-height: 5;
+        overflow: hidden;
+    }
+
+    a.index-link::before,
+    a.index-link::after  {
+      display: block;
+      position: absolute;
+      width: 3em;
+      height: 3em;
+      top: calc(50% - 1.5em);
+      left: calc(50% - 1.5em);
+      background-color: darken($brand-color, 15%);
+      border-radius: 1.5em;
+      z-index: -1;
+      content: "";
+    }
+
+    a.index-link::after {
+      width: 7em;
+      height: 7em;
+      top: calc(50% - 3.5em);
+      left: calc(50% - 3.5em);
+      border-radius: 3.5em;
+      background-color: darken($brand-color, 8%);
+      z-index: -2;
+    }
+
+    a.index-link:hover::before {
+      /* background-color: darken($brand-color, 25%); */
+    }
+
+    @media screen and (min-width: 600px) { 
+
+      a.index-link::after {
+       /* width: 10em;
+        height: 10em;
+        top: calc(50% - 5em);
+        left: calc(50% - 5em);
+        border-radius: 5em; */
+      }
+
+      .index-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+    }
+
+ }
+
+

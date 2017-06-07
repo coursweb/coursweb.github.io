@@ -36,7 +36,7 @@ Les auteurs et contributeurs sont:
 
 Ce site est construit avec [Jekyll](http://jekyllrb.com/), un générateur de sites. Il utilise le thème de base de Jekyll, avec de petites modifications.
 
-La plus importante modification concerne le menu, le code se trouve dans _includes/header.html.
+La plus importante modification concerne le menu. Le code se trouve dans _includes/header.html.
 
 Le code du menu de niveau 2 se trouve dans _includes/nav-second.html.
 

@@ -3,7 +3,7 @@
 	url = https://github.com/collectifwp/cours-divers
 [submodule "cours-javascript"]
 	path = cours-javascript
-	url = https://github.com/collectifwp/cours-javascript
+url=https://github.com/coursweb/cours-javascript
 [submodule "cours-css"]
 	path = cours-css
 	url = https://github.com/collectifwp/cours-css

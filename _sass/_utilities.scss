@@ -1,0 +1,23 @@
+/*
+ * Some CSS that can be used in code examples
+*/
+
+.flexgallery {
+	display: flex;
+}
+
+.flexgallery img:hover {
+	cursor: default;
+}
+
+.flexgallery figure {
+	padding: 0 0.5em;
+}
+
+.flexgallery figure:first-of-type {
+	padding-left: 0;
+}
+
+.flexgallery figure:last-of-type {
+	padding-right: 0;
+}

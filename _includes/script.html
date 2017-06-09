@@ -1,11 +1,13 @@
+{% comment %} 
+    loaded in : _layouts/default.html
+{% endcomment %}
+
 <script>
 
-// alert(location.hostname);
-
 for (var links = document.links, i = 0, a; a = links[i]; i++) {
-        if (a.host !== location.host) {
-                a.target = '_blank';
-        }
+    if (a.host !== location.host) {
+        a.target = '_blank';
+    }
 }
 
 // source: http://stackoverflow.com/a/12042044/1904769
@@ -17,7 +19,7 @@ var images = document.querySelectorAll('img'), i = images.length;
 while (i--) {
     var legend = images[i].getAttribute("alt");
     if (legend) {
-    	
+
     	// préparer la légende:
 		var node = document.createElement("figcaption");
 		var textnode = document.createTextNode(legend);
@@ -29,12 +31,9 @@ while (i--) {
         // idée: envelopper dans un élément <figure>
         // https://plainjs.com/javascript/manipulation/wrap-an-html-structure-around-an-element-28/
 
-	}
+	} // end if (legend)
     
-    // define alt text
-}
-
-
+} // end while
 
 </script>
 <script src="{{ "/javascripts/jquery-3.1.1.min.js" | prepend: site.baseurl }}"></script>
@@ -61,6 +60,80 @@ $(document).ready(function() {
         closeOnContentClick: true,
         verticalFit: true
     });
+
+
+  {% assign path_parts = page.path | split: '/' %}
+        
+        {% if path_parts[0] == 'cours-html' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-css' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-git' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-outils' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-divers' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-javascript' %}
+            {% assign giturl = 'coursweb' %}
+        {% elsif path_parts[0] == 'cours-wp' %}
+            {% assign giturl = 'collectifwp' %}
+        {% endif %}
+
+  {% if giturl %}
+
+    // Charger dynamiquement depuis Github la 
+    // liste des contributeurs de la page actuelle
+
+    // Méthode: jQuery.getJSON()
+
+    (function() {
+      
+      var GithubAPI = "https://api.github.com/repos/{{ giturl }}/{{ path_parts[0] }}/commits?path={{ path_parts[1] }}";
+
+      // var GithubData = JSON.parse(localStorage.getItem('smartIp'));
+      
+      // https://stackoverflow.com/questions/17379312/cache-json-response
+
+      $.getJSON( GithubAPI )
+        .done(function( data ) {
+
+            var authors = [];
+            var authornames = [];
+
+            authors.push( "<h3>Ont contribué à cette page:</h3>");
+
+            $.each(data, function(index, item) {
+                if(item.author) {
+                    
+                    var status = authornames.indexOf( item.author.login );
+                    console.log("status: "+status);
+
+                    if ( authornames.indexOf( item.author.login ) < 0 ) {
+
+                            authors.push( "<li><span>" + item.author.login + "</span><a href='"+item.author.html_url+"'><img src='"+item.author.avatar_url+"' /></a></li>" );
+                            authornames.push( item.author.login );
+                            // The push() method adds new items to the end of an array
+
+                    }
+
+                }
+            });
+
+            console.log(authors);
+
+              $( "<ul/>", {
+                "class": "contributors",
+                html: authors.join( "" )
+              }).appendTo( "#post-footer" );
+
+        }); // end function (data)
+
+    })();
+
+  {% endif %}
+
+  
 
 });
 </script>

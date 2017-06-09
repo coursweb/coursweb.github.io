@@ -10,7 +10,8 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
-
+  
+  <footer id="post-footer">
   <div class="source">
 	
 		{% assign path_parts = page.path | split: '/' %}
@@ -35,5 +36,6 @@ layout: default
   			(<a class="edit-link" href="{{ giturl }}edit/master/{{ path_parts[1] }}">modifier cette page sur GitHub</a>)
   		{% endif %}
   </div>
+  </footer>
 
 </article>

@@ -307,3 +307,29 @@ a.index-link:nth-child(even) {
 	margin-right: 0;
 }
 
+
+/*
+ * Contributors
+*/
+
+.contributors {
+    margin: 1em 0;
+    list-style: none;
+    display: flex;
+}
+
+.contributors h3 {
+    font-size: 1em;
+}
+
+.contributors span {
+    display: none;
+}
+
+.contributors img {
+    
+    width: 3em;
+    height: auto;
+    border-radius: 0.5em;
+    margin: 0;
+}

@@ -107,7 +107,6 @@ $(document).ready(function() {
                 if(item.author) {
                     
                     var status = authornames.indexOf( item.author.login );
-                    console.log("status: "+status);
 
                     if ( authornames.indexOf( item.author.login ) < 0 ) {
 
@@ -119,8 +118,6 @@ $(document).ready(function() {
 
                 }
             });
-
-            console.log(authors);
 
               $( "<ul/>", {
                 "class": "contributors",

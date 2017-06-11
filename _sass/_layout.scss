@@ -316,10 +316,16 @@ a.index-link:nth-child(even) {
     margin: 1em 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contributors h3 {
     font-size: 1em;
+    width: 100%;
+}
+
+.contributors li {
+    margin-right: 0.5em;
 }
 
 .contributors span {

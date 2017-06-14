@@ -98,8 +98,8 @@ $(document).ready(function() {
       $.getJSON( GithubAPI )
         .done(function( data ) {
 
-            var authors = [];
-            var authornames = [];
+            var authors = []; // liste complète des contributions
+            var authornames = []; // pour filtrer les doublons
 
             authors.push( "<h3>Ont contribué à cette page:</h3>");
 
@@ -114,10 +114,11 @@ $(document).ready(function() {
                             authornames.push( item.author.login );
                             // The push() method adds new items to the end of an array
 
-                    }
+                    } // if authornames.indexOf...
+                } // if(item.author)
+            }); // each
 
-                }
-            });
+            // TODO: test if authors has more than 1 person, otherwise skip.
 
               $( "<ul/>", {
                 "class": "contributors",

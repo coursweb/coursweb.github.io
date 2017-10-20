@@ -107,6 +107,9 @@ img + br {
 
 .site-header .wrapper {
 	max-width: 100%;
+  @include media-query($on-laptop) {
+    max-width: 100%;
+  }
 }
 
 .lettrine:first-letter {
@@ -256,13 +259,27 @@ img + br {
 		max-width: 100%;
 		padding-left: $sidebar-ratio;
 	}
-	
-	.wrapper {
-		margin-left: 0;
-	}
+
+  
 	
 } /*end min W 800px H 600px */
 
+
+@media screen 
+  and (min-width: 800px) { 
+
+  .homepage .page-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .homepage .wrapper {
+    max-width: calc(100% - (30px * 2));
+    margin-left: 0;
+    padding-right: 15px;
+  }
+
+}
 
 /**
  * Grid Layout
@@ -326,6 +343,12 @@ img + br {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
+    }
+
+    @media screen and (min-width: 960px) { 
+        .index-menu {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 
  }

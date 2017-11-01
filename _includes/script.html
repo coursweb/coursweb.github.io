@@ -2,65 +2,18 @@
     loaded in : _layouts/default.html
 {% endcomment %}
 
-<script>
-
-for (var links = document.links, i = 0, a; a = links[i]; i++) {
-    if (a.host !== location.host) {
-        a.target = '_blank';
-    }
-}
-
-// source: http://stackoverflow.com/a/12042044/1904769
-
-// insertion de légende sous les images:
-
-var images = document.querySelectorAll('img'), i = images.length;
-
-while (i--) {
-    var legend = images[i].getAttribute("alt");
-    if (legend) {
-
-    	// préparer la légende:
-		var node = document.createElement("figcaption");
-		var textnode = document.createTextNode(legend);
-		node.appendChild(textnode); // puts text inside html
-
-		// insérer après l'image:
-		images[i].parentNode.insertBefore(node, images[i].nextSibling);
-
-        // idée: envelopper dans un élément <figure>
-        // https://plainjs.com/javascript/manipulation/wrap-an-html-structure-around-an-element-28/
-
-	} // end if (legend)
-    
-} // end while
-
-</script>
+<script src="{{ "/javascripts/coursweb.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/javascripts/jquery-3.1.1.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/javascripts/magnific-popup/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/javascripts/coursweb.jquery.js" | prepend: site.baseurl }}"></script>
 <script>
 $(document).ready(function() {
 
-    // wrap images inside an A link...
+// Special style for Article-Lists
 
-    $(".post-content > p > img").each(function() {
-        var $this = $(this);
-        var css = $this.attr('class');
-        if (css != 'large-image') {
-            var src = $this.attr('src');
-            var alt = $this.attr('alt');
-            $this.addClass('image');
-            var a = $('<a/>').attr('href', src).attr('title', alt).addClass('image-link');
-            $this.wrap(a);
-        } 
-    });
 
-  $('.image-link').magnificPopup({    
-        type:'image',
-        closeOnContentClick: true,
-        verticalFit: true
-    });
 
+// Show Github Contributors
 
   {% assign path_parts = page.path | split: '/' %}
         
@@ -120,10 +73,10 @@ $(document).ready(function() {
 
             // TODO: test if authors has more than 1 person, otherwise skip.
 
-              $( "<ul/>", {
-                "class": "contributors",
-                html: authors.join( "" )
-              }).appendTo( "#post-footer" );
+          $( "<ul/>", {
+            "class": "contributors",
+            html: authors.join( "" )
+          }).appendTo( "#post-footer" );
 
         }); // end function (data)
 
@@ -131,7 +84,6 @@ $(document).ready(function() {
 
   {% endif %}
 
-  
 
 });
 </script>

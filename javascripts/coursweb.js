@@ -30,3 +30,16 @@ while (i--) {
     
 } // end while
 
+// Apply style for card lists 
+
+var cards = document.querySelectorAll('.cards'), i = cards.length;
+
+while (i--) {
+  // sélectionner l'objet suivant
+  var sibling = cards[i].nextElementSibling;
+  // console.log(sibling);
+  // , et lui appliquer une classe
+  sibling.className = "card-list";
+  // sibling.style.border="1px solid #0000FF";
+    
+} // end while

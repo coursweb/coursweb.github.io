@@ -14,6 +14,8 @@ $(document).ready(function() {
     } 
   });
 
+  // trigger Popup
+
   $('.image-link').magnificPopup({    
     type:'image',
     closeOnContentClick: true,

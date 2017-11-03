@@ -351,6 +351,45 @@ img + br {
         }
     }
 
- }
+
+/* Card Style List */
+
+@media screen and (min-width: 600px) { 
+
+    .card-list {
+      margin:0 0 2em 0;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(3, 1fr); 
+        
+    }
+
+    .card-list li {
+      list-style: none; 
+      display: block;
+      border: 0px solid $brand-color;
+      padding: 0.8em 1em;
+      background-color: darken($brand-color, 20%);
+      background: linear-gradient(135deg, darken($brand-color, 15%), darken($brand-color, 30%));
+      color: lighten($brand-color, 45%);
+    }
+
+    .card-list li a {
+      font-weight: bold;
+      display: block;
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 0.5em;
+    }
+    .card-list li a:hover {
+      color: #fff;
+    }
+
+  }
+
+
+
+
+ } /*end @supports grid*/
 
 

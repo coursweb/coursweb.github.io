@@ -120,17 +120,18 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 140%;
+    color: #f3f3f3;
+    background: #757575;
+    border-left: 4px solid $brand-color;
+    padding: $spacing-unit / 2;
+    font-size: 120%;
     // letter-spacing: -1px;
     font-style: normal;
     line-height: 1.4;
 
     @include media-query($on-laptop) {
         // means: up to 800px
-        font-size: 120%;
+        font-size: 110%;
     }
 
     > :last-child {

@@ -137,6 +137,10 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
+
+    a {
+        color : $brand-color;
+    }
 }
 
 

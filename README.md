@@ -76,12 +76,32 @@ sudo gem update --system
 
 Styles SASS/CSS et couleurs... 
 
-**Où est donc définie la couleur #828282 ?**
+#### Où est donc définie la couleur #828282 ?
 
 Cette couleur est définie par la variable $grey-color, elle-même définie dans css/main.scss
 
-**Classes CSS et Markdown... est-il possible de donner une classe à un élément?**
+#### Classes CSS et Markdown... est-il possible de donner une classe à un élément?
 
 Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-list-definitions
 
 Exemple: dans cours-javascript/400-javascript.md on ajoute une classe (.large-image) à des images de grande taille, pour conserver leur lisibilité. On ajoute donc le code `{:id: .large-image}` à la suite de la balise image.
+
+Cela n'est toutefois pas possible pour les paragraphes, listes, etc.
+
+Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on précède la liste par un ```<div class="cards"></div>```. Du JavaScript est employé pour donner une classe et des styles spécifiques à la liste suivant cette balise.
+
+#### Ajout de nouveaux chapitres
+
+Opérations à faire lorsqu'un nouveau chapitre (dossier) est ajouté:
+
+* modifier _config.yml (code "chapters")
+* modifier _layouts/page.html (Lien Github)
+* modifier _includes/script.html (Show Github Contributors)
+
+Important: 
+
+* Pour le **premier article** d'un chapitre, l'URL (permalink) doit obligatoirement être de un niveau - c'est sur la base de ce critère qu'est généré le menu.
+* Le code indiqué dans "chapters" doit correspondre à ce qui est dans le **permalien** (sinon le menu de 2ème niveau ne sera pas généré).
+
+
+

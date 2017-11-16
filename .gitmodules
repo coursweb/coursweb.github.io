@@ -19,3 +19,6 @@ url=https://github.com/coursweb/cours-javascript
 [submodule "cours-outils"]
 	path = cours-outils
 	url = https://github.com/coursweb/cours-outils
+[submodule "cours-typographie"]
+	path = cours-typographie
+	url = https://github.com/coursweb/cours-typographie/

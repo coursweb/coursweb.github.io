@@ -23,4 +23,12 @@ markdown: kramdown
 
 # Custom settings
 
-chapters: [ "html", "css", "js", "wp", "git", "outils", "divers" ]
+chapters: [ 
+  "html", 
+  "css", 
+  "typo", 
+  "js", 
+  "wp", 
+  "git", 
+  "outils", 
+  "divers" ]

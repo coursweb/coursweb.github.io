@@ -55,6 +55,7 @@ figcaption {
 	cursor: zoom-in;
 }
 
+
 .post-content img.large-image {
 	max-height: 100%;
 	cursor: auto;
@@ -195,13 +196,15 @@ img + br {
  	}
 
   .second-menu li {
-    margin: 0.3em;
+    margin: 0.5em 0.3em;
   }
 
   .second-menu a {
     color: #fff;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #545454;
+    
     border-radius: 0.2em;
+    padding: 0.3em 0.6em;
   }
 
   .second-menu a.active {
@@ -211,7 +214,7 @@ img + br {
 
   .second-menu a:hover {
     text-decoration: none;
-    background-color: $brand-color;
+    background-color: rgba(255,255,255,0.5);
   }
 
   .second-menu li:after {
@@ -249,7 +252,6 @@ img + br {
 @media screen 
 	and (min-width: 800px)  
 	and (min-height: 600px) { 
-	
 
 	.secondary-menu {
 		width: $sidebar-ratio;

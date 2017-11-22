@@ -86,9 +86,9 @@ Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-l
 
 Exemple: dans cours-javascript/400-javascript.md on ajoute une classe (.large-image) à des images de grande taille, pour conserver leur lisibilité. On ajoute donc le code `{:id: .large-image}` à la suite de la balise image.
 
-Cela n'est toutefois pas possible pour les paragraphes, listes, etc.
+Problème: cela ne fonctionne pas pour les paragraphes, listes, etc.
 
-Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on précède la liste par un ```<div class="cards"></div>```. Du JavaScript est employé pour donner une classe et des styles spécifiques à la liste suivant cette balise.
+Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on précède la liste par un ```<div class="cards"></div>```. Du JavaScript est employé pour donner une classe et des styles spécifiques à la liste qui suit cette balise.
 
 #### Ajout de nouveaux chapitres
 

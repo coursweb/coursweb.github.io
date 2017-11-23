@@ -44,9 +44,3 @@ while (i--) {
     
 } // end while
 
-// Au clic sur "Slideshow", activer Reveal.JS pour la page courante
-// attach click event
-
-var SlideshowButton = document.getElementById('userName'); 
-    inputTag.addEventListener('blur', doSomething(), false);
-

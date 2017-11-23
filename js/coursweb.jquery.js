@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // wrap images inside an A link...
+  /*  wrap images inside an A link... */
 
   $(".post-content > p > img").each(function() {
     var $this = $(this);
@@ -14,7 +14,7 @@ $(document).ready(function() {
     } 
   });
 
-  // trigger Popup
+  /* trigger Popup */
 
   $('.image-link').magnificPopup({    
     type:'image',
@@ -22,4 +22,10 @@ $(document).ready(function() {
     verticalFit: true
   });
 
-});
+  /* load reveal.js */
+
+
+  /* END reveal.js */
+
+
+}); // document ready

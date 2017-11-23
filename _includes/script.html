@@ -7,13 +7,32 @@
 <script src="{{ "/js/magnific-popup/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/coursweb.jquery.js" | prepend: site.baseurl }}"></script>
 <script>
+
+(function (a) {
+    a.fn.replaceTagName = function (f) {
+        var g = [],
+            h = this.length;
+        while (h--) {
+            var k = document.createElement(f),
+                b = this[h],
+                d = b.attributes;
+            for (var c = d.length - 1; c >= 0; c--) {
+                var j = d[c];
+                k.setAttribute(j.name, j.value)
+            }
+            k.innerHTML = b.innerHTML;
+            a(b).after(k).remove();
+            g[h - 1] = k
+        }
+        return a(g)
+    }
+})(window.jQuery);
+
 $(document).ready(function() {
 
-// Special style for Article-Lists
-
-
-
+/*
 // Show Github Contributors
+*/
 
   {% assign path_parts = page.path | split: '/' %}
         
@@ -35,24 +54,28 @@ $(document).ready(function() {
 
   {% if giturl %}
 
-    // Charger dynamiquement depuis Github la 
-    // liste des contributeurs de la page actuelle
+    /* 
+    Charger dynamiquement depuis Github la 
+    liste des contributeurs de la page actuelle
 
-    // Méthode: jQuery.getJSON()
+    Méthode: jQuery.getJSON()
+    */
 
     (function() {
       
       var GithubAPI = "https://api.github.com/repos/{{ giturl }}/{{ path_parts[0] }}/commits?path={{ path_parts[1] }}";
 
+      /* 
       // var GithubData = JSON.parse(localStorage.getItem('smartIp'));
       
       // https://stackoverflow.com/questions/17379312/cache-json-response
+      */
 
       $.getJSON( GithubAPI )
         .done(function( data ) {
 
-            var authors = []; // liste complète des contributions
-            var authornames = []; // pour filtrer les doublons
+            var authors = []; /* liste complète des contributions */
+            var authornames = []; /*  pour filtrer les doublons */
 
             authors.push( "<h3>Ont contribué à cette page:</h3>");
 
@@ -65,25 +88,119 @@ $(document).ready(function() {
 
                             authors.push( "<li><span>" + item.author.login + "</span><a href='"+item.author.html_url+"'><img src='"+item.author.avatar_url+"' /></a></li>" );
                             authornames.push( item.author.login );
-                            // The push() method adds new items to the end of an array
+                            /* The push() method adds new items to the end of an array */
 
-                    } // if authornames.indexOf...
-                } // if(item.author)
-            }); // each
-
+                    }
+                }
+            });
+            /* 
             // TODO: test if authors has more than 1 person, otherwise skip.
+            */
 
           $( "<ul/>", {
             "class": "contributors",
             html: authors.join( "" )
           }).appendTo( "#post-footer" );
 
-        }); // end function (data)
+        });
 
     })();
 
   {% endif %}
 
+
+  $( "#slideshow" ).click(function(e) {
+
+    e.preventDefault();
+
+  
+    /*  remove original stylesheets: */
+
+    $('link[rel=stylesheet]').remove();
+
+    $("<link/>", {
+       rel: "stylesheet",
+       type: "text/css",
+       href: "/reveal.js/css/reveal.css"
+    }).appendTo("head");
+
+    $("<link/>", {
+       rel: "stylesheet",
+       type: "text/css",
+       href: "/reveal.js/css/theme/solarized.css"
+    }).appendTo("head");
+
+    $("<link/>", {
+       rel: "stylesheet",
+       type: "text/css",
+       href: "/reveal.js/lib/css/zenburn.css"
+    }).appendTo("head");
+
+    /* methode: https://stackoverflow.com/questions/11803215/  */
+
+    /* Manipulate content */
+
+    /* Move title into slides */
+
+    var SlideshowTitle = $("h1.post-title").clone();
+    SlideshowTitle.prependTo("#post-content");
+
+    /* remove content */
+
+    $(".site-header").remove();
+    $(".secondary-menu").remove();
+    $(".site-footer").remove();
+    $(".post-header").remove();
+    $("#post-footer").remove();
+
+    /* create sections */
+
+    $( "#post-content > div, #post-content > p, #post-content > blockquote, #post-content > h1, #post-content > h2, #post-content > h3, #post-content > h4" ).wrap( "<section></section>" );
+
+    /* 
+
+    Lists items : need to be transformed into nested slides.
+
+    Also possible, but may place too much content on screen:
+
+    $( "#post-content li:not(:first-child)" ).addClass( "fragment" );     
+
+    */
+
+    $("#post-content > ul > li").replaceTagName("section");
+
+    $("#post-content > ul").replaceTagName("section");
+
+    $.when(
+      $.getScript( "/reveal.js/lib/js/head.min.js" ),
+      $.getScript( "/reveal.js/js/reveal.js" ),
+      $.Deferred(function( deferred ){
+          $( deferred.resolve );
+      })
+    ).done(function(){
+
+    /* place your code here, the scripts are all loaded  */
+
+      console.log("loaded!!");
+
+      Reveal.initialize({
+
+            width: "90%",
+            height: "100%",
+            margin: 0.2,
+            minScale: 0.5,
+            maxScale: 1,
+            backgroundTransition: 'zoom'
+      });
+
+      $(".reveal.center").css({ 
+      "height": "95hv" });
+
+    });
+
+    /* END done */
+
+  });  
 
 });
 </script>

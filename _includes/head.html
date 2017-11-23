@@ -10,4 +10,43 @@
   <link rel="stylesheet" href="{{ "/js/magnific-popup/magnific-popup.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <style>
+    /* The follwing styles are for Reveal.JS */
+    .reveal.center, 
+    .reveal.center .slides, 
+    .reveal.center .slides section {
+      height: 100vh;
+      font-size: 5vmin;
+    }
+    
+    .reveal.center .slides section {
+      text-align: left;
+    }
+
+    .reveal.center .slides h1,
+    .reveal.center .slides h2,
+    .reveal.center .slides h3,
+    .reveal.center .slides h4 {
+      hyphens: none;
+      word-wrap: normal;
+      text-align: center;
+    }
+        
+    .reveal.center .slides h1 {
+      font-size: 3em;
+    }
+    .reveal.center .slides h2 {
+      font-size: 2.6em;
+    }
+    .reveal.center .slides h3 {
+      font-size: 2.2em;
+    }
+    .reveal.center .slides h4 {
+      font-size: 1.8em;
+    }
+
+    
+
+  </style>
+
 </head>

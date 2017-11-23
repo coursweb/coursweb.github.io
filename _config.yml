@@ -24,6 +24,17 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# Whitespace killer
+compress_html:
+  clippings: false
+  comments: false
+  endings: false
+  ignore:
+    envs: []
+  blanklines: true
+  profile: true
+  startings: false
+
 # Custom settings
 
 chapters: [ 

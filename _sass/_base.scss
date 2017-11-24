@@ -138,7 +138,8 @@ blockquote {
         margin-bottom: 0;
     }
 
-    a {
+    a, 
+    a:visited {
         color : $brand-color;
     }
 }

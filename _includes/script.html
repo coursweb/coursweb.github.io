@@ -152,6 +152,7 @@ $(document).ready(function() {
     $(".site-footer").remove();
     $(".post-header").remove();
     $("#post-footer").remove();
+    $("#post-content > hr").remove();
 
     /* create sections */
 
@@ -167,9 +168,9 @@ $(document).ready(function() {
 
     */
 
-    $("#post-content > ul > li").replaceTagName("section");
+    $("#post-content > ul > li, #post-content > ol > li").replaceTagName("section");
 
-    $("#post-content > ul").replaceTagName("section");
+    $("#post-content > ul, #post-content > ol").replaceTagName("section");
 
     $.when(
       $.getScript( "/reveal.js/lib/js/head.min.js" ),

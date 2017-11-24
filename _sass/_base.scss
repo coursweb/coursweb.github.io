@@ -44,7 +44,6 @@ pre, code {
 }
 
 
-
 /**
  * Images
  */
@@ -114,6 +113,10 @@ a {
     }
 }
 
+.post-content a {
+    text-decoration: underline;
+}
+
 
 
 /**
@@ -156,6 +159,17 @@ code {
     border-radius: 3px;
     background-color: $code-background;
 }
+
+/**
+ * Pas dans un bloc de citaation!
+*/
+
+blockquote code {
+    background-color: transparent;
+    border: 0;
+    font-size: 0.9em;
+}
+
 
 code {
     padding: 1px 5px;

@@ -22,10 +22,28 @@ $(document).ready(function() {
     verticalFit: true
   });
 
-  /* load reveal.js */
+  /* show edit icons */
 
+if (document.documentElement.clientWidth > 600) {
 
-  /* END reveal.js */
+  var EditLink = $('.edit-link');
+  var SlideshowLink = $('.slideshow-link');
 
+  $(window).scroll(function () {
+      var $this = $(this);
+      if($this.scrollTop() > 200) {
+          EditLink.fadeIn();
+          SlideshowLink.fadeIn();
+      }
+      else {
+          EditLink.fadeOut();
+          SlideshowLink.fadeOut();
+      }
+  });
+
+}
+
+  
 
 }); // document ready
+

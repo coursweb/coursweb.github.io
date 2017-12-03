@@ -51,7 +51,7 @@
     }
 
     .active {
-        color: $brand-color;
+        color: darken($brand-color, 10%);
         background: $grey-color-light;
     }
 

@@ -129,7 +129,7 @@ img + br {
     border-bottom: 1px solid $grey-color-light;
 
     .active {
-        color: $brand-color;
+        color: darken($brand-color, 15%);
     }
 
     ul {

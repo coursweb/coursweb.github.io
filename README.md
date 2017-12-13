@@ -88,7 +88,7 @@ Exemple: dans cours-javascript/400-javascript.md on ajoute une classe (.large-im
 
 Problème: cela ne fonctionne pas pour les paragraphes, listes, etc.
 
-Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on précède la liste par un ```<div class="cards"></div>```. Du JavaScript est employé pour donner une classe et des styles spécifiques à la liste qui suit cette balise.
+Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on *précède* la liste par un `<div class="cards"></div>`. Dans `js/coursweb.js`, on donne une classe et des styles spécifiques à la liste qui suit cette balise.
 
 #### Ajout de nouveaux chapitres
 

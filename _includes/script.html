@@ -36,20 +36,8 @@ $(document).ready(function() {
 
   {% assign path_parts = page.path | split: '/' %}
         
-        {% if path_parts[0] == 'cours-html' %}
+        {% if path_parts[0] contains 'cours-' %}
             {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-css' %}
-            {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-git' %}
-            {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-outils' %}
-            {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-divers' %}
-            {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-javascript' %}
-            {% assign giturl = 'coursweb' %}
-        {% elsif path_parts[0] == 'cours-wp' %}
-            {% assign giturl = 'collectifwp' %}
         {% endif %}
 
   {% if giturl %}
@@ -63,7 +51,7 @@ $(document).ready(function() {
 
     (function() {
       
-      var GithubAPI = "https://api.github.com/repos/{{ giturl }}/{{ path_parts[0] }}/commits?path={{ path_parts[1] }}";
+      var GithubAPI = "https://api.github.com/repos/coursweb/{{ path_parts[0] }}/commits?path={{ path_parts[1] }}";
 
       /* 
       // var GithubData = JSON.parse(localStorage.getItem('smartIp'));

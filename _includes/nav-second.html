@@ -14,7 +14,7 @@
         
         {% if node_url_parts[1] == url_parts[1] %}
         
-            <li><a  class="{% if node.url == page.url %} active{% endif %}"  href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
+            <li><a class="{% if node.url == page.url %} active{% endif %}" href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
         {% endif %}
 
       {% endif %}

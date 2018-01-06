@@ -90,7 +90,7 @@ Problème: cela ne fonctionne pas pour les paragraphes, listes, etc.
 
 Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on *précède* la liste par un `<div class="cards"></div>`. Dans `js/coursweb.js`, on donne une classe et des styles spécifiques à la liste qui suit cette balise.
 
-#### Ajout de nouveaux chapitres
+#### Ajout de nouveaux chapitres
 
 Opérations à faire lorsqu'un nouveau chapitre (dossier) est ajouté:
 
@@ -103,5 +103,10 @@ Important:
 * Pour le **premier article** d'un chapitre, l'URL (permalink) doit obligatoirement être de un niveau - c'est sur la base de ce critère qu'est généré le menu.
 * Le code indiqué dans "chapters" doit correspondre à ce qui est dans le **permalien** (sinon le menu de 2ème niveau ne sera pas généré).
 
+### Mode Diaporama
 
+Il est possible de consulter les chapitres en mode "diaporama". 
 
+Le code JavaScript qui déclenche ce mode se trouve actuellement dans `_includes/script.html`.
+
+Les styles CSS agissant sur le diaporama sont inclus dans `_includes/head.html` (car toutes les feuilles de style externes sont supprimées lors du basculement en mode "diaporama").

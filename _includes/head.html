@@ -12,7 +12,15 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <style>
-    /* The follwing styles are for Reveal.JS */
+    /* 
+    The follwing styles are for Reveal.JS 
+
+    Note: we cannot use the .reveal selector alone, 
+    because it is also present in regular HTML version.
+    
+    Solution: use .reveal.center
+    
+    */
     .reveal.center, 
     .reveal.center .slides, 
     .reveal.center .slides section {
@@ -48,18 +56,18 @@
 
     /* Images */
 
-    .reveal section img {
+    .reveal.center section img {
       margin-top: -15vh;
       height: 70vh;
     }
 
-    .reveal  .figcaption {
+    .reveal.center  .figcaption {
       font-size: 0.8em;
     }
 
     /* Code */
 
-    .reveal pre code {
+    .reveal.center pre code {
       background-color: #fff;
       padding: 2em;
     }

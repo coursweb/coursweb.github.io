@@ -64,6 +64,14 @@ bundle exec jekyll serve
 
 Si cela fonctionne, le terminal vous indiquera l'URL pour accéder au serveur, p.ex. [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
+#### Problème possible
+
+Le terminal retourne ceci:
+
+-bash: /usr/local/bin/bundle: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby: bad interpreter: No such file or directory
+
+Cela signifie que Ruby (langage utilisé par Jekyll) ne fonctionne plus, éventuellement suite à une mise à jour du système MacOS.
+
 ### Autres commandes utiles
 
 Mettre à jour Rubygems: 

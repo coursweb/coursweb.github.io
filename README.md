@@ -70,7 +70,15 @@ Le terminal retourne ceci:
 
 -bash: /usr/local/bin/bundle: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby: bad interpreter: No such file or directory
 
-Cela signifie que Ruby (langage utilisé par Jekyll) ne fonctionne plus, éventuellement suite à une mise à jour du système MacOS.
+Cela signifie que certaines composantes de Ruby (langage utilisé par Jekyll) ne fonctionnent plus, car elles font appel à une ancienne version de Ruby (qui a été mise à jour avec le système MacOS). La solution consiste à mettre à jour les composantes (Gems), avec ces commandes:
+
+```
+gem install bundler
+## et ensuite:
+bundle install
+```
+
+Cela va réinstaller tout ce qui est nécessaire à Jekyll - [voir la documentation](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) pour plus de détails. 
 
 ### Autres commandes utiles
 

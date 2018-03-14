@@ -88,6 +88,12 @@ Mettre à jour Rubygems:
 sudo gem update --system
 ```
 
+Mettre à jour Jekyll et les "gems" incluses:
+
+```
+sudo bundle update
+```
+
 ### Notes diverses
 
 Styles SASS/CSS et couleurs... 

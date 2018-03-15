@@ -23,13 +23,14 @@ Le code du thème Jekyll (dérivé de [Minima](https://github.com/jekyll/minima)
 
 Les corrections et améliorations sont les bienvenues, et se font par l'intermédiaire du système GIT. Les chapitres HTML, CSS et WordPress sont des "repositories", que vous pouvez cloner, forker, compléter et proposer à la publication.
 
-Les contenus sont rédigés en syntaxe [Markdown](https://collectifwp.github.io/cours-web/wp/texte-formatage#rdiger-en-markdown).
+Les contenus sont rédigés en syntaxe [Markdown](https://cours-web.ch/wp/texte-formatage#rdiger-en-markdown).
 
 ## Les auteurs
 
 Les auteurs et contributeurs sont:
 
 * [Manuel Schmalstieg](https://github.com/ms-studio) – artiste, développeur et enseignant.
+* Des élèves des classes de graphisme de l'Eracom.
 * ...
 
 ## Technique

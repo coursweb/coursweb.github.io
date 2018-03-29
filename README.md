@@ -113,13 +113,11 @@ Problème: cela ne fonctionne pas pour les paragraphes, listes, etc.
 
 Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on *précède* la liste par un `<div class="cards"></div>`. Dans `js/coursweb.js`, on donne une classe et des styles spécifiques à la liste qui suit cette balise.
 
-#### Ajout de nouveaux chapitres
+#### Comment ajouter de nouveaux chapitres?
 
 Opérations à faire lorsqu'un nouveau chapitre (dossier) est ajouté:
 
-* modifier _config.yml (code "chapters")
-* modifier _layouts/page.html (Lien Github)
-* modifier _includes/script.html (Show Github Contributors)
+* modifier _config.yml (code "chapters").
 
 Important: 
 

@@ -1,6 +1,23 @@
 <nav class="secondary-menu">
 
-  {%  if site.chapters contains url_parts[1] %}
+{% comment %}
+  
+  Convoluted way of producing an Array of chapter URLs.
+  So we can compare it with URL of current page.
+
+{% endcomment %}
+
+{% assign chapter_urls = "" %}
+
+{% for chapter in site.chapters %}
+  {% assign chapter_urls = chapter_urls | append: ',' | append: chapter.url %}
+
+{% endfor %}
+
+{% assign chapter_urls = chapter_urls | split: ',' %}
+
+
+  {%  if chapter_urls contains url_parts[1] %}
       
       <div class="second-menu">
         <ul>
@@ -24,4 +41,5 @@
       </div>
 
     {% endif %}
+
 </nav>

@@ -37,7 +37,7 @@ compress_html:
 
 # Custom settings
 
-chapters: [ 
+chapterz: [ 
   "html", 
   "css", 
   "typo", 
@@ -46,3 +46,27 @@ chapters: [
   "git", 
   "outils", 
   "divers" ]
+
+chapters:
+ - title: HTML
+   url: html
+ - title: CSS
+   url: css
+ - title: Typographie
+   url: typo
+ - title: JavaScript
+   url: js
+ - title: WordPress
+   url: wp
+ - title: Git
+   url: git
+ - title: Outils
+   url: outils
+ - title: Processus
+   url: processus
+ - title: Divers
+   url: divers
+
+
+
+# end of _config.yml

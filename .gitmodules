@@ -25,3 +25,6 @@ url=https://github.com/coursweb/cours-javascript
 [submodule "reveal.js"]
 	path = reveal.js
 	url = https://github.com/hakimel/reveal.js/
+[submodule "cours-processus"]
+	path = cours-processus
+	url = https://github.com/coursweb/cours-processus

@@ -38,8 +38,6 @@
         padding: 0.5em;
     }
 
-    
-
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -63,6 +61,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        z-index: 5;
 
         .menu-icon {
             display: block;
@@ -95,12 +94,11 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            padding: 5px 10px 5px 20px;
 
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
         }
     }
 }
@@ -259,17 +257,18 @@
         font-size: 22px;
 
         @include media-query($on-laptop) {
-            font-size: 29px;
+            font-size: 20px;
         }
     }
 
-    h4 {
+    h4, h5, h6 {
         font-size: 18px;
 
         @include media-query($on-laptop) {
             font-size: 16px;
         }
     }
+
 
     strong, b {
         font-weight: $bold-font-weight;

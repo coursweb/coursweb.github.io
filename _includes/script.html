@@ -57,33 +57,58 @@ $(document).ready(function() {
       // var GithubData = JSON.parse(localStorage.getItem('smartIp'));
       
       // https://stackoverflow.com/questions/17379312/cache-json-response
+
+      // http://api.jquery.com/jquery.getjson/
+
+      // obj.length
       */
 
       $.getJSON( GithubAPI )
         .done(function( data ) {
 
+            /* 
+            console.log('loaded!:'+data.length);
+            console.log(data);
+            */
+
             var authors = []; /* liste complète des contributions */
             var authornames = []; /*  pour filtrer les doublons */
 
-            authors.push( "<h3>Ont contribué à cette page:</h3>");
-
-            $.each(data, function(index, item) {
-                if(item.author) {
-                    
-                    var status = authornames.indexOf( item.author.login );
-
-                    if ( authornames.indexOf( item.author.login ) < 0 ) {
-
-                            authors.push( "<li><span>" + item.author.login + "</span><a href='"+item.author.html_url+"'><img src='"+item.author.avatar_url+"' /></a></li>" );
-                            authornames.push( item.author.login );
-                            /* The push() method adds new items to the end of an array */
-
-                    }
-                }
-            });
             /* 
             // TODO: test if authors has more than 1 person, otherwise skip.
             */
+
+            authors.push( "<h3>Ont contribué à cette page:</h3>");
+
+            /* The push() method adds new items to the end of an array */
+
+            $.each(data, function(index, item) {
+
+                /* 
+                This loops through each commit (=item) 
+                */
+
+                if(item.author) {
+                    
+                /* 
+                Testing if author is already in list.
+                Method: str.indexOf()
+                Returns position in Array (0 to N).
+                Returns -1 if the value to search for never occurs. 
+                */
+
+                  if ( authornames.indexOf( item.author.login ) < 0 ) {
+
+                    /* 1) create markup. */
+                    authors.push( "<li><span>" + item.author.login + "</span><a href='"+item.author.html_url+"'><img src='"+item.author.avatar_url+"' /></a></li>" );
+                    
+                    /* 2) add name to list of authors */
+                    authornames.push( item.author.login );
+
+                  }
+                }
+            });
+            
 
           $( "<ul/>", {
             "class": "contributors",
@@ -169,8 +194,6 @@ $(document).ready(function() {
     ).done(function(){
 
     /* place your code here, the scripts are all loaded  */
-
-      console.log("loaded!!");
 
       Reveal.initialize({
 

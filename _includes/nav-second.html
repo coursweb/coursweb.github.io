@@ -1,4 +1,4 @@
-<nav class="secondary-menu">
+
 
 {% comment %}
   
@@ -11,7 +11,6 @@
 
 {% for chapter in site.chapters %}
   {% assign chapter_urls = chapter_urls | append: ',' | append: chapter.url %}
-
 {% endfor %}
 
 {% assign chapter_urls = chapter_urls | split: ',' %}
@@ -19,6 +18,7 @@
 
   {%  if chapter_urls contains url_parts[1] %}
       
+      <nav class="secondary-menu">
       <div class="second-menu">
         <ul>
         
@@ -39,7 +39,7 @@
 
         </ul>
       </div>
+      </nav>
 
     {% endif %}
 
-</nav>

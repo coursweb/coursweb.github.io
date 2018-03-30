@@ -124,6 +124,10 @@ Important:
 * Pour le **premier article** d'un chapitre, l'URL (permalink) doit obligatoirement être de un niveau - c'est sur la base de ce critère qu'est généré le menu.
 * Le code indiqué dans "chapters" doit correspondre à ce qui est dans le **permalien** (sinon le menu de 2ème niveau ne sera pas généré).
 
+Le menu de navigation principal, affichant les chapitres, se trouve dans _includes/nav-primary.html
+
+La page d'acceuil, qui montre les chapitres sous form de blocs, est produite par le fichier index.html
+
 ### Mode Diaporama
 
 Il est possible de consulter les chapitres en mode "diaporama". 

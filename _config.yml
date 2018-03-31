@@ -60,10 +60,12 @@ chapters:
    url: wp
  - title: Git
    url: git
- - title: Outils
-   url: outils
  - title: Processus
    url: processus
+ - title: Outils
+   url: outils
+ - title: Figma
+   url: figma
  - title: Divers
    url: divers
 

@@ -37,16 +37,6 @@ compress_html:
 
 # Custom settings
 
-chapterz: [ 
-  "html", 
-  "css", 
-  "typo", 
-  "js", 
-  "wp", 
-  "git", 
-  "outils", 
-  "divers" ]
-
 chapters:
  - title: HTML
    url: html
@@ -66,9 +56,10 @@ chapters:
    url: outils
  - title: Figma
    url: figma
+ - title: Newsletters
+   url: newsletters
  - title: Divers
    url: divers
-
 
 
 # end of _config.yml

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Les matières traitées sont: le langage HTML, les styles CSS, la conception de sites avec WordPress.
+Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Parmi les matières traitées figurent le langage HTML, les styles CSS, ou encore la conception de sites avec WordPress.
 
 Ce support de cours accompagne entre autres les cours donnés à [l'Eracom](http://www.eracom.ch/) (Lausanne), à [l'Ecole d'Art Appliqués de La Chaux-de-Fonds](http://www.eaa-la-chaux-de-fonds.ch/), ainsi que les modules de formation du [Collectif WP](http://collectifwp.ch).
 

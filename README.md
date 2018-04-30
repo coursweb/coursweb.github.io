@@ -65,7 +65,7 @@ bundle exec jekyll serve
 
 Si cela fonctionne, le terminal vous indiquera l'URL pour accéder au serveur, p.ex. [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
-#### Problème possible
+#### Problèmes potentiels
 
 Le terminal retourne ceci:
 

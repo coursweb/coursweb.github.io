@@ -14,7 +14,7 @@ $(document).ready(function() {
     } 
   });
 
-  /* trigger Popup */
+  /* Trigger Popup */
 
   $('.image-link').magnificPopup({    
     type:'image',
@@ -22,22 +22,19 @@ $(document).ready(function() {
     verticalFit: true
   });
 
-  /* show edit icons */
+  /* Show Edit Icons */
 
 if (document.documentElement.clientWidth > 600) {
 
-  var EditLink = $('.edit-link');
-  var SlideshowLink = $('.slideshow-link');
+  var SourceLink = $('.source');
 
   $(window).scroll(function () {
       var $this = $(this);
       if($this.scrollTop() > 200) {
-          EditLink.fadeIn();
-          SlideshowLink.fadeIn();
+          SourceLink.fadeIn();
       }
       else {
-          EditLink.fadeOut();
-          SlideshowLink.fadeOut();
+          SourceLink.fadeOut();
       }
   });
 

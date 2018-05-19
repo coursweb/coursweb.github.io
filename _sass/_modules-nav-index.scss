@@ -1,0 +1,129 @@
+
+/* Front-Page Chapter Navigation */
+
+
+/**
+ * Index page
+ */
+
+
+a.index-link {
+  display: block;
+    position: relative;
+  float: left;
+    z-index: 2;
+  width: 48%;
+  padding-bottom: 7%;
+  padding-top: 7%;
+  text-align: center;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  
+  color: #fff;
+  font-size: 130%;
+  background-color: darken($brand-color, 5%);
+}
+
+a.index-link:hover {
+  background-color: darken($brand-color, 15%);
+  text-decoration: none;
+}
+
+a.index-link:nth-child(even) {
+  margin-right: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) { 
+
+  a.index-link {
+    width: 30%;
+    font-size: 160%;
+  }
+  a.index-link:nth-child(even) {
+    margin-right: 4%;
+  }
+  a.index-link:nth-child(3n+3) {
+    margin-right: 0;
+  } 
+
+}
+
+
+
+/**
+ * Grid Layout
+ */
+
+ @supports (display: grid) {
+    
+    .index-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    a.index-link {
+        width: 100%;
+        float: none;
+        height: 1fr;
+        line-height: 5;
+        overflow: hidden;
+    }
+
+    a.index-link::before,
+    a.index-link::after  {
+      display: block;
+      position: absolute;
+      width: 3em;
+      height: 3em;
+      top: calc(50% - 1.5em);
+      left: calc(50% - 1.5em);
+      background-color: darken($brand-color, 15%);
+      border-radius: 1.5em;
+      z-index: -1;
+      content: "";
+    }
+
+    a.index-link::after {
+      width: 7em;
+      height: 7em;
+      top: calc(50% - 3.5em);
+      left: calc(50% - 3.5em);
+      border-radius: 3.5em;
+      background-color: darken($brand-color, 8%);
+      z-index: -2;
+    }
+
+    a.index-link:hover::before {
+      /* background-color: darken($brand-color, 25%); */
+    }
+
+    @media screen and (min-width: 600px) { 
+
+      a.index-link::after {
+       /* width: 10em;
+        height: 10em;
+        top: calc(50% - 5em);
+        left: calc(50% - 5em);
+        border-radius: 5em; */
+      }
+
+      .index-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+    }
+
+    @media screen and (min-width: 960px) { 
+        .index-menu {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+
+
+ } /*end @supports grid*/

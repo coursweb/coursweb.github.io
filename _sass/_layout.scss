@@ -1,7 +1,11 @@
 /**
  * Site header
  */
+
 .site-header {
+ 
+    padding-bottom: 12px;
+
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -10,12 +14,17 @@
     position: relative;
 }
 
+
 .site-title {
     font-size: 26px;
     font-weight: $bold-font-weight;
-    line-height: 56px;
+    line-height: 1;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    
+    margin-top: 12px;
+    margin-right: 1em;
+    margin-bottom: 12px;
+
     float: left;
 
     &,
@@ -25,89 +34,11 @@
 }
 
 
-.site-nav {
-    float: right;
-    line-height: 2em;
-    margin-top: 0.5em;
-
-    .menu-icon {
-        display: none;
-    }
-
-    a {
-        padding: 0.5em;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    .active {
-        color: darken($brand-color, 10%);
-        background: $grey-color-light;
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-        z-index: 5;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px 5px 20px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-        }
-    }
-}
-
-
 
 /**
  * Site footer
  */
+
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
@@ -275,36 +206,6 @@
     }
 }
 
-/**
- * Index page
- */
-
-
-a.index-link {
-	display: block;
-    position: relative;
-	float: left;
-    z-index: 2;
-	width: 48%;
-	padding-bottom: 7%;
-	padding-top: 7%;
-	text-align: center;
-	margin-right: 4%;
-	margin-bottom: 4%;
-	
-	color: #fff;
-	font-size: 130%;
-	background-color: darken($brand-color, 5%);
-}
-
-a.index-link:hover {
-	background-color: darken($brand-color, 15%);
-	text-decoration: none;
-}
-
-a.index-link:nth-child(even) {
-	margin-right: 0;
-}
 
 
 /*
@@ -345,11 +246,43 @@ a.index-link:nth-child(even) {
 
 @media screen and (min-width: 601px) { 
 
+    /*
+     * Note: initially those items are hidden with JavaScript
+     * In: coursweb.jquery.js
+    */
+
+    .post-content {
+      padding-right: 5em;
+    }
+
+    .source {
+        display: none;
+        position: fixed;
+        top: 45%;
+        top: calc(50vh - 3.5rem);
+        right: 2rem;
+        width: 3rem;
+        height: 7rem;
+    }
+
+    .source::before {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 3.5rem;
+        height: 100vh;
+        width: 1px;
+        background-color: $brand-color;
+        content: '';
+        z-index: 1;
+    }
+
     .edit-link,
     .slideshow-link {
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
         border-radius: 50%;
         width: 3rem;
         height: 3rem;
@@ -358,7 +291,6 @@ a.index-link:nth-child(even) {
         color: transparent;
         background-color: $brand-color;
         background-size: 100%;
-        display: none;
         transition: background-color 0.3s ease-in-out;
     }
 
@@ -368,7 +300,7 @@ a.index-link:nth-child(even) {
     }
 
     .slideshow-link {
-        top: 6rem;
+        top: 4rem;
         background-image: url('/img/slideshow-link-2.png');
     }
 
@@ -376,5 +308,7 @@ a.index-link:nth-child(even) {
     .slideshow-link:hover {
         background-color: darken($brand-color, 15%);
     }
+
+    
 
 }

@@ -1,9 +1,11 @@
-
-
 {% comment %}
   
-  Convoluted way of producing an Array of chapter URLs.
-  So we can compare it with URL of current page.
+  This file produces the 2nd level menu.
+
+  Our method:
+
+  1: we produce an array of chapter URLs.
+  2: we compare it with URL of current page.
 
 {% endcomment %}
 
@@ -14,7 +16,6 @@
 {% endfor %}
 
 {% assign chapter_urls = chapter_urls | split: ',' %}
-
 
   {%  if chapter_urls contains url_parts[1] %}
       
@@ -41,5 +42,5 @@
       </div>
       </nav>
 
-    {% endif %}
+  {% endif %}
 

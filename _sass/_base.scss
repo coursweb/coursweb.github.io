@@ -119,11 +119,12 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: #f3f3f3;
-    background: #757575;
+    color: #000;
+    background: #e5e6e5;;
     border-left: 4px solid $brand-color;
     padding: $spacing-unit / 2;
-    font-size: 120%;
+    font-size: 140%;
+    font-family: 'Fanwood Text', serif;
     // letter-spacing: -1px;
     font-style: normal;
     line-height: 1.4;

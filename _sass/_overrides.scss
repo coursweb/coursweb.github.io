@@ -1,4 +1,6 @@
-
+/*
+ Base Style Overrides
+*/
 
 h1, h2, h3, h4, h5, h6 {
 	color: $grey-color-dark
@@ -20,29 +22,8 @@ figcaption {
 	color: $grey-color;
 }
 
-.site-header {
-	padding-bottom: 12px;
-}
 
-.site-title {
-	margin-right: 1em;
-	line-height: 1;
-	margin-top: 12px;
-}
 
-.site-nav {
-	float: left;
-}
-
-.site-nav .page-link:not(:last-child) {
-	margin-right: 0;
-}
- 
-.site-nav .active {
-	background-color: $background-color;
-	// border: 1px solid $brand-color;
-	text-decoration: underline;
-}
 
 .page-content {
 	clear: left;
@@ -118,69 +99,7 @@ img + br {
   float: left;
 }
 
-/**
- * Secondary Menu
- */
 
-.second-menu {
-	
-	@extend %clearfix;
-
-    border-bottom: 1px solid $grey-color-light;
-
-    .active {
-        color: darken($brand-color, 15%);
-    }
-
-    ul {
-		padding-left: 1em;
-		color: $grey-color-pale;
-		margin-left: -0.4em;
-    }
-    
-    li {
-        list-style-type: none;
-        float: left;
-    }
-	
-	li:after {
-    	content: "— ";
-	}
-		
-	li:last-of-type:after {
-    	content: none;
-	}
-	
-    a {
-        padding: 0.2em 0.5em 0.2em 0.5em;
-        color: black;
-        display: inline;
-    }
-    
-    li:first-of-type a {
-    	/* padding-left: 0.15em; */
-	}
-
-
-}
-
-.second-menu {
-	padding-bottom: 15px;
-}
-
-.page-content .secondary-menu {
-	
-	border-top: 1px solid $grey-color-light;
-	
-}
-
-.page-content .second-menu {
-	
-	border-bottom: 0;
-	/*padding-bottom: 0;
-	padding-top: 0;*/
-  margin-top: $spacing-unit;
-}
 
 /* 
  * Media Queries 
@@ -189,43 +108,11 @@ img + br {
 @media screen and (max-width: 799px),
        screen and (max-height: 599px) { 
 
- 	.second-menu {
- 		padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #828282;
- 	}
-
-  .second-menu li {
-    margin: 0.5em 0.3em;
-  }
-
-  .second-menu a {
-    color: #fff;
-    background-color: #545454;
-    
-    border-radius: 0.2em;
-    padding: 0.3em 0.6em;
-  }
-
-  .second-menu a.active {
-    background-color: $brand-color;
-    color: #fff;
-  }
-
-  .second-menu a:hover {
-    text-decoration: none;
-    background-color: rgba(255,255,255,0.5);
-  }
-
-  .second-menu li:after {
-    content: '';
-  }
 
   .page-content {
     padding-bottom: 0;
   }
 
-  .page-content .secondary-menu,
   .site-header,
   .site-footer {
     border: 0;
@@ -233,79 +120,6 @@ img + br {
 
 
 }
-
-@media screen and (min-width: 600px) { 
-
-	a.index-link {
-		width: 30%;
-		font-size: 160%;
-	}
-	a.index-link:nth-child(even) {
-		margin-right: 4%;
-	}
-	a.index-link:nth-child(3n+3) {
-		margin-right: 0;
-	} 
-
-}
-
-@media screen 
-	and (min-width: 800px)  
-	and (min-height: 600px) { 
-
-	.secondary-menu {
-		width: $sidebar-ratio;
-		float: left; 
-		position: fixed;
-		background: $background-color;
-		padding-top: 30px;
-	}
-	
-	.second-menu {
-		
-		border-bottom: 0px;
-		
-		ul {
-			margin-left: $spacing-unit;
-		}
-		
-		li {
-        	list-style-type: lower-roman;
-        	float: none;
-    	}
-    	
-    	li:after {
-    		content: none;
-		}
-		
-		a {
-        	display: block;
-    	}
-		
-		.active {
-		/* background: #eee; */
-			text-decoration: underline;
-		}
-	}
-	
-	.page-content .secondary-menu {
-		display: none;
-	}
-	
-	.page-content {
-    	padding-top: $spacing-unit;
-	}
-	
-	.page-content,
-	.site-footer {
-		width: $content-ratio;
-		max-width: 100%;
-		padding-left: $sidebar-ratio;
-	}
-
-  
-	
-} /*end min W 800px H 600px */
 
 
 @media screen 
@@ -324,115 +138,26 @@ img + br {
 
 }
 
-/**
- * Grid Layout
- */
 
- @supports (display: grid) {
-    
-    .index-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2em;
-    }
-
-    a.index-link {
-        width: 100%;
-        float: none;
-        height: 1fr;
-        line-height: 5;
-        overflow: hidden;
-    }
-
-    a.index-link::before,
-    a.index-link::after  {
-      display: block;
-      position: absolute;
-      width: 3em;
-      height: 3em;
-      top: calc(50% - 1.5em);
-      left: calc(50% - 1.5em);
-      background-color: darken($brand-color, 15%);
-      border-radius: 1.5em;
-      z-index: -1;
-      content: "";
-    }
-
-    a.index-link::after {
-      width: 7em;
-      height: 7em;
-      top: calc(50% - 3.5em);
-      left: calc(50% - 3.5em);
-      border-radius: 3.5em;
-      background-color: darken($brand-color, 8%);
-      z-index: -2;
-    }
-
-    a.index-link:hover::before {
-      /* background-color: darken($brand-color, 25%); */
-    }
-
-    @media screen and (min-width: 600px) { 
-
-      a.index-link::after {
-       /* width: 10em;
-        height: 10em;
-        top: calc(50% - 5em);
-        left: calc(50% - 5em);
-        border-radius: 5em; */
-      }
-
-      .index-menu {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-    }
-
-    @media screen and (min-width: 960px) { 
-        .index-menu {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
+@media screen 
+  and (min-width: 800px)  
+  and (min-height: 600px) { 
 
 
-/* Card Style List */
-
-@media screen and (min-width: 600px) { 
-
-    .card-list {
-      margin:0 0 2em 0;
-      display: grid;
-      grid-gap: 1em;
-      grid-template-columns: repeat(3, 1fr); 
-        
-    }
-
-    .card-list li {
-      list-style: none; 
-      display: block;
-      border: 0px solid $brand-color;
-      padding: 0.8em 1em;
-      background-color: darken($brand-color, 20%);
-      background: linear-gradient(135deg, darken($brand-color, 15%), darken($brand-color, 30%));
-      color: #c6d2c8;
-    }
-
-    .card-list li a {
-      font-weight: bold;
-      display: block;
-      font-size: 1.2em;
-      color: #fff;
-      margin-bottom: 0.5em;
-    }
-    .card-list li a:hover {
-      color: #fff;
-    }
-
+  .page-content {
+      padding-top: $spacing-unit;
+  }
+  
+  .page-content,
+  .site-footer {
+    width: $content-ratio;
+    max-width: 100%;
+    padding-left: $sidebar-ratio;
   }
 
+  
+  
+} /*end min W 800px H 600px */
 
-
-
- } /*end @supports grid*/
 
 

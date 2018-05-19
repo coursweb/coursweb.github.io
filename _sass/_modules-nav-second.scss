@@ -1,0 +1,174 @@
+
+/* Secondary Navigation */
+
+
+/**
+ * Secondary Menu
+ */
+
+.second-menu {
+  
+  @extend %clearfix;
+
+    border-bottom: 1px solid $grey-color-light;
+
+    .active {
+        color: darken($brand-color, 15%);
+    }
+
+    ul {
+    padding-left: 1em;
+    color: $grey-color-pale;
+    margin-left: -0.4em;
+    }
+    
+    li {
+        list-style-type: none;
+        float: left;
+    }
+  
+  li:after {
+      content: "— ";
+  }
+    
+  li:last-of-type:after {
+      content: none;
+  }
+  
+    a {
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        color: black;
+        display: inline;
+    }
+    
+    li:first-of-type a {
+      /* padding-left: 0.15em; */
+  }
+
+
+}
+
+.second-menu {
+  padding-bottom: 15px;
+}
+
+.page-content .secondary-menu {
+  
+  border-top: 1px solid $grey-color-light;
+  
+}
+
+.page-content .second-menu {
+  
+  border-bottom: 0;
+  /*padding-bottom: 0;
+  padding-top: 0;*/
+  margin-top: $spacing-unit;
+}
+
+
+
+/* 
+ * Media Queries 
+ */
+
+@media screen and (max-width: 799px),
+       screen and (max-height: 599px) { 
+
+  .second-menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #828282;
+  }
+
+  .second-menu li {
+    margin: 0.5em 0.3em;
+  }
+
+  .second-menu a {
+    color: #fff;
+    background-color: #545454;
+    
+    border-radius: 0.2em;
+    padding: 0.3em 0.6em;
+  }
+
+  .second-menu a.active {
+    background-color: $brand-color;
+    color: #fff;
+  }
+
+  .second-menu a:hover {
+    text-decoration: none;
+    background-color: $contrast-color;
+  }
+
+  .second-menu li:after {
+    content: '';
+  }
+
+  .page-content .secondary-menu {
+    border: 0;
+  }
+
+}
+
+
+
+@media screen 
+  and (min-width: 800px)  
+  and (min-height: 600px) { 
+
+  .secondary-menu {
+    width: $sidebar-ratio;
+    float: left; 
+    position: fixed;
+    background: $background-color;
+    padding-top: 30px;
+  }
+  
+  .second-menu {
+    
+    border-bottom: 0px;
+    
+    ul {
+      margin-left: $spacing-unit;
+    }
+    
+    li {
+          list-style-type: lower-roman;
+          float: none;
+      }
+      
+      li:after {
+        content: none;
+    }
+    
+    a {
+          display: block;
+      }
+    
+    .active {
+    /* background: #eee; */
+      text-decoration: underline;
+    }
+  }
+  
+  .page-content .secondary-menu {
+    display: none;
+  }
+  
+  .page-content {
+      padding-top: $spacing-unit;
+  }
+  
+  .page-content,
+  .site-footer {
+    width: $content-ratio;
+    max-width: 100%;
+    padding-left: $sidebar-ratio;
+  }
+
+  
+} /*end min W 800px H 600px */
+

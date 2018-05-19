@@ -20,9 +20,11 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fffbf2; // #fdfdfd
-$brand-color:      #00d2b8;
+$brand-color:      #00d2b8; // blue-green
+
 $brand-color-dark: darken($brand-color, 15%);
 $code-background:  #fff; // lighten($brand-color, 55%);
+$contrast-color:   #f766ff; // pink
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 30%); // = #ededed;
@@ -58,6 +60,10 @@ $content-ratio:    100 - $sidebar-ratio;
         "fonts",
         "base",
         "layout",
+        "modules-nav-index",
+        "modules-nav-main",
+        "modules-nav-second",
+        "modules-cards",
         "overrides",
         "utilities",
         "syntax-highlighting"

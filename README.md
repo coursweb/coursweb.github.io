@@ -97,7 +97,23 @@ sudo bundle update
 
 ### Notes diverses
 
-Styles SASS/CSS et couleurs... 
+Styles SASS/CSS et couleurs...
+
+#### Comment ajouter de nouveaux fichiers SASS/CSS?
+
+Il faut:
+
+1. Ajouter les fichiers dans _sass
+2. Spécifier les noms des fichiers ajoutés dans css/main.scss, sous @import. 
+
+#### MediaQueries - quels sont les breakpoints?
+
+Ils sont définis également dans css/main.scss. 
+
+À la bas il y en a deux:
+
+- $on-palm:          600px;
+- $on-laptop:        800px;
 
 #### Où est donc définie la couleur #828282 ?
 
@@ -124,7 +140,9 @@ Important:
 * Pour le **premier article** d'un chapitre, l'URL (permalink) doit obligatoirement être de un niveau - c'est sur la base de ce critère qu'est généré le menu.
 * Le code indiqué dans "chapters" doit correspondre à ce qui est dans le **permalien** (sinon le menu de 2ème niveau ne sera pas généré).
 
-Le menu de navigation principal, affichant les chapitres, se trouve dans _includes/nav-primary.html
+Le menu de navigation principal, affichant les chapitres, se trouve dans _includes/nav-primary.html.
+
+Le menu de 2e niveau se trouve dans nav-second.html.
 
 La page d'acceuil, qui montre les chapitres sous form de blocs, est produite par le fichier index.html
 

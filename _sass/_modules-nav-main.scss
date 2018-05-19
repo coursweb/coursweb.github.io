@@ -1,0 +1,103 @@
+
+/* Primary Navigation */
+
+
+.site-nav {
+
+    float: left;
+    line-height: 2em;
+    margin-top: 0.5em;
+
+    .menu-icon {
+      display: none;
+    }
+
+    a {
+        padding: 0.5em;
+    }
+
+    .page-link {
+        
+        color: $text-color;
+        line-height: $base-line-height;
+        
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+          // margin-right: 20px;
+        }
+    }
+
+    .active {
+        color: darken($brand-color, 10%);
+        background-color: $background-color;
+        text-decoration: underline;
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+        z-index: 5;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px 5px 20px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) {
+    
+  .site-nav {
+
+    .page-link {
+        
+      border: 1px solid $text-color;
+      line-height: 2.6;
+
+    }
+  }
+
+}
+
+
+
+
+

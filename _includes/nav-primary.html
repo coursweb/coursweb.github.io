@@ -2,12 +2,15 @@
 
   Production du menu principal
 
+  On utilise pour cela les "chapters", qui sont définis dans
+  les custom settings de _config.yml
+
 {% endcomment %}
 
 
 {% for chapter in site.chapters %}
   
-  <a class="page-link" href="{{ site.url }}/{{ chapter.url }}">{{ chapter.title }}</a>
+  <a class="page-link chapter-{{ chapter.url }}" href="{{ site.url }}/{{ chapter.url }}">{{ chapter.title }}</a>
 
 {% endfor %}
 

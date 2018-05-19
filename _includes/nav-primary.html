@@ -10,7 +10,9 @@
 
 {% for chapter in site.chapters %}
   
-  <a class="page-link chapter-{{ chapter.url }}" href="{{ site.url }}/{{ chapter.url }}">{{ chapter.title }}</a>
+  {% assign page_url_parts = page.url| split: '/' %}
+  
+  <a class="page-link chapter-{{ chapter.url }}{% if chapter.url == page_url_parts[1] %}  active{% endif %}" href="{{ site.url }}/{{ chapter.url }}">{{ chapter.title }}</a>
 
 {% endfor %}
 

@@ -91,13 +91,23 @@
         
       border: 1px solid $text-color;
       line-height: 2.6;
+        
+      &.active,
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+        
+      &.active {
+        background-color: $brand-color;
+      }
+
+      &:hover {
+        background-color: $contrast-color;
+      }
 
     }
   }
 
 }
-
-
-
-
 

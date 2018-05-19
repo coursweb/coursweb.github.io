@@ -38,9 +38,12 @@ while (i--) {
   // sélectionner l'objet suivant
   var sibling = cards[i].nextElementSibling;
   // console.log(sibling);
-  // , et lui appliquer une classe
+  // et lui appliquer une classe
   sibling.className = "card-list";
   // sibling.style.border="1px solid #0000FF";
+
+  // TODO:
+  // modifier le contenu, remplacer les ", " dans le texte qui suit le lien.
     
 } // end while
 

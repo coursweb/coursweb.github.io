@@ -124,7 +124,7 @@ blockquote {
     border-left: 4px solid $brand-color;
     padding: $spacing-unit / 2;
     font-size: 140%;
-    font-family: 'Fanwood Text', serif;
+    font-family: $serif-font-family;
     // letter-spacing: -1px;
     font-style: normal;
     line-height: 1.4;

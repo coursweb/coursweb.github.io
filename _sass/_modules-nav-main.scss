@@ -83,6 +83,10 @@
     }
 }
 
+/*
+ * Desktop menu styling
+*/
+
 @media screen and (min-width: 601px) {
     
   .site-nav {
@@ -91,6 +95,7 @@
         
       border: 1px solid $text-color;
       line-height: 2.6;
+      transition: background-color 0.2s ease-in-out;
         
       &.active,
       &:hover {
@@ -103,7 +108,7 @@
       }
 
       &:hover {
-        background-color: $contrast-color;
+        background-color: darken($contrast-color, 25%);
       }
 
     }

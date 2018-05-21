@@ -8,49 +8,43 @@
 
 .second-menu {
   
-  @extend %clearfix;
+    @extend %clearfix;
 
     border-bottom: 1px solid $grey-color-light;
-
-    .active {
-        color: darken($brand-color, 15%);
-    }
+    padding-bottom: 15px;
 
     ul {
-    padding-left: 1em;
-    color: $grey-color-pale;
-    margin-left: -0.4em;
+      padding-left: 1em;
+      color: $grey-color-pale;
+      margin-left: -0.4em;
     }
     
     li {
-        list-style-type: none;
-        float: left;
+
+      list-style-type: none;
+      float: left;
+
+      &:after {
+        content: "— ";
+      }
+
+      &:last-of-type:after {
+        content: none;
+      }
+
     }
-  
-  li:after {
-      content: "— ";
-  }
-    
-  li:last-of-type:after {
-      content: none;
-  }
-  
+
     a {
-        padding: 0.2em 0.5em 0.2em 0.5em;
-        color: black;
-        display: inline;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+      color: black;
+      display: inline;
     }
-    
-    li:first-of-type a {
-      /* padding-left: 0.15em; */
-  }
 
+    .active {
+      color: darken($brand-color, 15%);
+    }
 
-}
-
-.second-menu {
-  padding-bottom: 15px;
-}
+} /* .second-menu */
 
 .page-content .secondary-menu {
   
@@ -61,8 +55,6 @@
 .page-content .second-menu {
   
   border-bottom: 0;
-  /*padding-bottom: 0;
-  padding-top: 0;*/
   margin-top: $spacing-unit;
 }
 
@@ -72,40 +64,50 @@
  * Media Queries 
  */
 
+/* 
+ * Small Screens 
+ * 
+ * We show the second menu at the top and bottom of the content.
+ *
+ */
+
 @media screen and (max-width: 799px),
        screen and (max-height: 599px) { 
 
   .second-menu {
+
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #828282;
-  }
-
-  .second-menu li {
-    margin: 0.5em 0.3em;
-  }
-
-  .second-menu a {
-    color: #fff;
-    background-color: #545454;
     
-    border-radius: 0.2em;
-    padding: 0.3em 0.6em;
-  }
+    li {
+      margin: 0.5em 0.3em;
 
-  .second-menu a.active {
-    background-color: $brand-color;
-    color: #fff;
-  }
+      &:after {
+        content: '';
+      }
+    }
 
-  .second-menu a:hover {
-    text-decoration: none;
-    background-color: $contrast-color;
-  }
+    a {
+      color: #fff;
+      background-color: #545454;
+      border-radius: 0.2em;
+      padding: 0.3em 0.6em;
 
-  .second-menu li:after {
-    content: '';
-  }
+      
+      &.active {
+        background-color: $brand-color;
+        color: #fff;
+      }
+
+      &:hover {
+        background-color: $contrast-color;
+        text-decoration: none;
+      }
+
+    }
+
+  } /* .second-menu */
 
   .page-content .secondary-menu {
     border: 0;
@@ -113,10 +115,15 @@
 
 }
 
-
+/* 
+ * Large Screens 
+ * 
+ * We show the menu in the sidebar, and hide it in the footer
+ *
+ */
 
 @media screen 
-  and (min-width: 800px)  
+  and (min-width: $on-laptop)  
   and (min-height: 600px) { 
 
   .secondary-menu {
@@ -136,30 +143,32 @@
     }
     
     li {
-          list-style-type: lower-roman;
-          float: none;
-      }
+        list-style-type: lower-roman;
+        float: none;
       
-      li:after {
+      &:after {
         content: none;
-    }
-    
-    a {
-          display: block;
       }
+
+    }
+          
+    a {
+      display: block;
+    }
     
     .active {
-    /* background: #eee; */
       text-decoration: underline;
     }
-  }
+
+  } /* .second-menu */
   
+  /* Hide menu in footer */
   .page-content .secondary-menu {
-    display: none;
+    display: none; 
   }
   
   .page-content {
-      padding-top: $spacing-unit;
+    padding-top: $spacing-unit;
   }
   
   .page-content,

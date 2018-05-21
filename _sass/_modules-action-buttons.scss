@@ -1,0 +1,75 @@
+
+/* Action Buttons */
+
+/*
+ * Action Buttons
+*/
+
+@media screen and (min-width: 601px) { 
+
+    /*
+     * Note: initially those items are hidden with JavaScript
+     * In: coursweb.jquery.js
+    */
+
+    .post-content {
+      padding-right: 5em; /* Make Space for the Action Buttons */
+    }
+
+    .source {
+        display: none;
+        position: fixed;
+        top: 45%;
+        top: calc(50vh - 3.5rem);
+        right: 2rem;
+        width: 3rem;
+        height: 7rem;
+    }
+
+    .source::before {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 3.5rem;
+        height: 100vh;
+        width: 1px;
+        background-color: $brand-color;
+        content: '';
+        z-index: 1;
+    }
+
+    .edit-link,
+    .slideshow-link {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+        background-color: $brand-color;
+        background-size: 100%;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .edit-link {
+        background-image: url('/img/edit-link-2.png');
+        
+    }
+
+    .slideshow-link {
+        top: 4rem;
+        background-image: url('/img/slideshow-link-2.png');
+    }
+
+    .edit-link:hover,
+    .slideshow-link:hover {
+        background-color: darken($brand-color, 15%);
+    }
+
+    
+
+}

@@ -12,7 +12,7 @@ layout: default
   </div>
   
   <footer id="post-footer">
-  <div class="source">
+  <ul class="source">
 	
 		{% assign path_parts = page.path | split: '/' %}
 		
@@ -21,12 +21,12 @@ layout: default
 		{% endif %}
 
   		{% if giturl %}
-  			<a class="edit-link" href="{{ giturl }}{{ path_parts[0] }}/edit/master/{{ path_parts[1] }}">modifier cette page sur GitHub</a>
+  			<li><a class="edit-link" href="{{ giturl }}{{ path_parts[0] }}/edit/master/{{ path_parts[1] }}">modifier cette page sur GitHub</a></li>
   		{% endif %}
 
-    <a id="slideshow" class="slideshow-link" href="#">slideshow</a>
+    <li><a id="slideshow" class="slideshow-link" href="#">slideshow</a></li>
 
-  </div>
+  </ul>
   </footer>
 
 </article>

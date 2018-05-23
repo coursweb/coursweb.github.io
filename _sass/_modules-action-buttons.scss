@@ -24,19 +24,24 @@
         right: 2rem;
         width: 3rem;
         height: 7rem;
+
+        li {
+            list-style: none;
+        }
+
+        &::before {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 3.5rem;
+            height: 100vh;
+            width: 1px;
+            background-color: $brand-color;
+            content: '';
+            z-index: 1;
+        }
     }
 
-    .source::before {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 3.5rem;
-        height: 100vh;
-        width: 1px;
-        background-color: $brand-color;
-        content: '';
-        z-index: 1;
-    }
 
     .edit-link,
     .slideshow-link {
@@ -68,6 +73,13 @@
     .edit-link:hover,
     .slideshow-link:hover {
         background-color: darken($brand-color, 15%);
+    }
+
+    .edit-link::before {
+        // content: "modifier";
+        // display: block;
+        // position: absolute;
+        // border: 1px solid green;
     }
 
     

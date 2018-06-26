@@ -42,6 +42,8 @@ chapters:
    url: html
  - title: CSS
    url: css
+ - title: Media
+   url: media
  - title: Typographie
    url: typo
  - title: JavaScript
@@ -50,12 +52,12 @@ chapters:
    url: wp
  - title: Git
    url: git
- - title: Processus
-   url: processus
  - title: Outils
    url: outils
  - title: Figma
    url: figma
+ - title: Processus
+   url: processus
  - title: Newsletters
    url: newsletters
  - title: Divers

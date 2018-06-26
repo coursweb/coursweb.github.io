@@ -103,14 +103,14 @@ Styles SASS/CSS et couleurs...
 
 Il faut:
 
-1. Ajouter les fichiers dans _sass
-2. Spécifier les noms des fichiers ajoutés dans css/main.scss, sous @import. 
+1. Ajouter les fichiers dans le dossier `_sass`.
+2. Spécifier les noms des fichiers ajoutés dans `css/main.scss`, sous @import. 
 
 #### MediaQueries - quels sont les breakpoints?
 
-Ils sont définis également dans css/main.scss. 
+Ils sont définis également dans `css/main.scss`. 
 
-À la bas il y en a deux:
+À la base il y en a deux:
 
 - $on-palm:          600px;
 - $on-laptop:        800px;
@@ -125,15 +125,17 @@ Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-l
 
 Exemple: dans cours-javascript/400-javascript.md on ajoute une classe (.large-image) à des images de grande taille, pour conserver leur lisibilité. On ajoute donc le code `{:id: .large-image}` à la suite de la balise image.
 
-Problème: cela ne fonctionne pas pour les paragraphes, listes, etc.
+**Problème:** cela ne fonctionne pas pour les paragraphes, listes, etc.
 
-Voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on *précède* la liste par un `<div class="cards"></div>`. Dans `js/coursweb.js`, on donne une classe et des styles spécifiques à la liste qui suit cette balise.
+**Solution:** voici l'astuce employée pour créer une grille de "cartes" à partir d'une liste de liens (p.ex. dans Git-Workflow): on *précède* la liste par un `<div class="cards"></div>`. 
+
+Dans `js/coursweb.js`, on donne une classe et des styles spécifiques à la liste *qui suit cette balise*.
 
 #### Comment ajouter de nouveaux chapitres?
 
-Opérations à faire lorsqu'un nouveau chapitre (dossier) est ajouté:
+Opération à faire lorsqu'un nouveau chapitre (dossier) est ajouté:
 
-* modifier _config.yml (code "chapters").
+* modifier `_config.yml` (code "chapters"). C'est tout! :)
 
 Important: 
 
@@ -144,7 +146,7 @@ Le menu de navigation principal, affichant les chapitres, se trouve dans _includ
 
 Le menu de 2e niveau se trouve dans nav-second.html.
 
-La page d'acceuil, qui montre les chapitres sous form de blocs, est produite par le fichier index.html
+La page d'accueil, qui montre les chapitres sous form de blocs, est produite par le fichier index.html
 
 ### Mode Diaporama
 

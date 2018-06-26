@@ -4,7 +4,7 @@ title: Exportation d'images
 permalink: /media/exporter/
 ---
 
-Afin de publier des images sur le web, il faut veiller que leur format et leur poids soit approprié.
+Afin de publier des images sur le web, il faut veiller à ce que leur format et leur poids soit approprié.
 
 Voici comment faire une exportation depuis un logiciel (Photoshop):
 

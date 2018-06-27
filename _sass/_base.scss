@@ -140,7 +140,7 @@ blockquote {
 
     a, 
     a:visited {
-        color : $brand-color;
+        // color : darken($brand-color, 15%);
     }
 }
 

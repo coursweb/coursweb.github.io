@@ -63,15 +63,15 @@ a.index-link:nth-child(even) {
     .index-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2em;
+        grid-gap: 1em;
     }
 
     a.index-link {
         width: 100%;
         float: none;
-        height: 1fr;
         line-height: 5;
         overflow: hidden;
+        margin: 0;
     }
 
     a.index-link::before,
@@ -120,10 +120,59 @@ a.index-link:nth-child(even) {
 
     @media screen and (min-width: 960px) { 
         .index-menu {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1160px) { 
+
+        .index-menu {
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 1em;
+        }
+        a.index-link,
+        a.index-link:nth-child(even) {
+          margin: 0;
+          margin-bottom: 0;
         }
     }
 
 
-
  } /*end @supports grid*/
+
+
+ /*
+ * Album Covers
+ */
+
+a.index-link.chapter-typo,
+a.index-link.chapter-js,
+a.index-link.chapter-git {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-size: contain;
+  padding-bottom: 92%;
+  opacity: 0.9;
+}
+
+a.index-link.chapter-typo {
+  background-image: url(/img/covers/typo-cover.jpg);
+  padding-bottom: 95%;
+}
+
+a.index-link.chapter-js {
+  background-image: url(/img/covers/js-cover.jpg);
+}
+
+a.index-link.chapter-git {
+  background-image: url(/img/covers/git-cover.jpg);
+}
+
+
+
+a.index-link.chapter-typo:hover,
+a.index-link.chapter-js:hover,
+a.index-link.chapter-git:hover {
+  opacity: 1;
+}

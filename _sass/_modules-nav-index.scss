@@ -33,8 +33,11 @@ a.index-link:nth-child(even) {
   margin-right: 0;
 }
 
-
-
+.home-slogan {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
 
 
 @media screen and (min-width: 600px) { 
@@ -147,7 +150,8 @@ a.index-link:nth-child(even) {
 
 a.index-link.chapter-typo,
 a.index-link.chapter-js,
-a.index-link.chapter-git {
+a.index-link.chapter-git,
+a.index-link.chapter-figma {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -169,10 +173,15 @@ a.index-link.chapter-git {
   background-image: url(/img/covers/git-cover.jpg);
 }
 
+a.index-link.chapter-figma {
+  background-image: url(/img/covers/figma-cover.jpg);
+}
+
 
 
 a.index-link.chapter-typo:hover,
 a.index-link.chapter-js:hover,
-a.index-link.chapter-git:hover {
+a.index-link.chapter-git:hover,
+a.index-link.chapter-figma:hover {
   opacity: 1;
 }

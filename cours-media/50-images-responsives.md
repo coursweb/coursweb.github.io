@@ -46,7 +46,7 @@ Enfin, une méthode trouvée sur [un site de Google](https://design.google.com/a
   data-preserveaspectratio="true" 
   data-src="form.jpg" 
   data-target="#fig-2" 
-  style="background-image: url(&quot;form-1240@2x.jpg&quot;);">
+  style="background-image: url(form-1240@2x.jpg);">
 </div>
 ~~~
 
@@ -55,5 +55,5 @@ On notera qu'il n'y a pas de balise image (&lt;img&gt;), l'image est affichée c
 ## Références sur les images responsives
 
 - [http://caniuse.com/#feat=picture](http://caniuse.com/#feat=picture)
-- [https://github.com/scottjehl/picturefill - un polyfill]()
+- [https://github.com/scottjehl/picturefill](https://github.com/scottjehl/picturefill) - un polyfill
 - [https://responsiveimages.org/](https://responsiveimages.org/)

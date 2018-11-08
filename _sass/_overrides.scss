@@ -26,7 +26,7 @@ figcaption {
 
 
 .page-content {
-	clear: left;
+	// clear: left;
 	padding-top: 30px; /* Overridden by MediaQuery */
 }
 
@@ -145,14 +145,14 @@ img + br {
 
 
   .page-content {
-      padding-top: $spacing-unit;
+      // padding-top: $spacing-unit;
   }
   
   .page-content,
   .site-footer {
-    width: $content-ratio;
-    max-width: 100%;
-    padding-left: $sidebar-ratio;
+    // width: $content-ratio;
+    // max-width: 100%;
+    // padding-left: $sidebar-ratio;
   }
 
   

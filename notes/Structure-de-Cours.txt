@@ -68,5 +68,3 @@ Part III : Real-World Development
 16: SVG and the Canvas: Rich Graphics in the Browser
 
 ***
-
--inurl:htm -inurl:html intitle:”index of” “Norah Jones” mp3

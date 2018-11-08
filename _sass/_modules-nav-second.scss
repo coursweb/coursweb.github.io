@@ -129,7 +129,7 @@
   .secondary-menu {
     width: $sidebar-ratio;
     float: left; 
-    position: fixed;
+    // position: fixed;
     background: $background-color;
     padding-top: 30px;
   }
@@ -169,12 +169,19 @@
   
   .page-content {
     padding-top: $spacing-unit;
+    float: right;
+    clear: none;
+    padding-left: 0; /* overriden in _overrides.scss */
   }
   
   .page-content,
   .site-footer {
     width: $content-ratio;
     max-width: 100%;
+  }
+
+  .site-footer {
+    clear: both;
     padding-left: $sidebar-ratio;
   }
 

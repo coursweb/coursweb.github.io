@@ -148,6 +148,7 @@ a.index-link:nth-child(even) {
  * Album Covers
  */
 
+a.index-link.chapter-html,
 a.index-link.chapter-typo,
 a.index-link.chapter-js,
 a.index-link.chapter-git,
@@ -158,11 +159,15 @@ a.index-link.chapter-figma {
   background-size: contain;
   padding-bottom: 92%;
   opacity: 0.9;
+
+  &:hover {
+      opacity: 1;
+    }
+
 }
 
 a.index-link.chapter-html {
   background-image: url(/img/covers/html-cover.jpg);
-  padding-bottom: 95%;
 }
 
 a.index-link.chapter-typo {
@@ -182,11 +187,3 @@ a.index-link.chapter-figma {
   background-image: url(/img/covers/figma-cover.jpg);
 }
 
-
-
-a.index-link.chapter-typo:hover,
-a.index-link.chapter-js:hover,
-a.index-link.chapter-git:hover,
-a.index-link.chapter-figma:hover {
-  opacity: 1;
-}

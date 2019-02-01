@@ -41,6 +41,11 @@ ul, ol, dl, figure,
 pre, code {
     font-family: $code-font-family;
     font-weight: 400;
+     white-space: pre-wrap;
+     white-space: -moz-pre-wrap;
+     white-space: -pre-wrap;
+     white-space: -o-pre-wrap;
+     word-wrap: break-word;
 }
 
 

@@ -296,9 +296,6 @@ footer {
     position:static;
   }
 
-  pre, code {
-    word-wrap:normal;
-  }
 }
 
 @media print, screen and (max-width: 480px) {

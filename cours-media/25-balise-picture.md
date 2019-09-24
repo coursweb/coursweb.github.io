@@ -16,3 +16,7 @@ Exemple:
     <img src="image.jpg" alt="My Image">
 </picture>
 ```
+
+## Support dans les navigateurs 
+
+La balise picture est supportée dans quasiment tous les navigateurs, [selon CanIUse](https://caniuse.com/#feat=picture).

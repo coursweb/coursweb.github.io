@@ -8,6 +8,7 @@ for (var links = document.links, i = 0, a; a = links[i]; i++) {
 }
 
 // insertion de légende sous les images:
+// ************************** 
 
 var images = document.querySelectorAll('img'), i = images.length;
 
@@ -30,7 +31,8 @@ while (i--) {
     
 } // end while
 
-// Apply style for card lists 
+// Apply style for card lists
+// ************************** 
 
 var cards = document.querySelectorAll('.cards'), i = cards.length;
 
@@ -46,4 +48,6 @@ while (i--) {
   // modifier le contenu, remplacer les ", " dans le texte qui suit le lien.
     
 } // end while
+
+
 

@@ -119,6 +119,12 @@ Ils sont définis également dans `css/main.scss`.
 
 Cette couleur est définie par la variable $grey-color, elle-même définie dans css/main.scss
 
+#### Cache-buster pour le CSS
+
+Après des modifications de CSS, comment veiller à ce qu'elles soient appliquées?
+
+Ce n'est pas automatisé, c'est fait "à la main", dans le fichier _includes/head.html : une variable est ajoutée après main.css (qui est le fichier contenant tout le CSS compilé).
+
 #### Classes CSS et Markdown... est-il possible de donner une classe à un élément?
 
 Oui, avec cette méthode: https://kramdown.gettalong.org/syntax.html#attribute-list-definitions

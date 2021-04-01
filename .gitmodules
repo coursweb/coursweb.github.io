@@ -13,6 +13,3 @@
 [submodule "reveal.js"]
 	path = reveal.js
 	url = https://github.com/hakimel/reveal.js/
-[submodule "cours-newsletters"]
-	path = cours-newsletters
-	url = https://github.com/coursweb/cours-newsletters

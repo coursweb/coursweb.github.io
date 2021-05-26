@@ -1,9 +1,6 @@
 [submodule "cours-divers"]
 	path = cours-divers
 	url = https://github.com/collectifwp/cours-divers
-[submodule "cours-html"]
-	path = cours-html
-	url = https://github.com/collectifwp/cours-html
 [submodule "reveal.js"]
 	path = reveal.js
 	url = https://github.com/hakimel/reveal.js/

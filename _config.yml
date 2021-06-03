@@ -60,6 +60,8 @@ chapters:
    url: processus
  - title: Newsletters
    url: newsletters
+ - title: Serveurs et hébergement
+   url: serveurs
  - title: Divers
    url: divers
 

@@ -48,6 +48,8 @@ chapters:
    url: typographie
  - title: JavaScript
    url: javascript
+ - title: MarkDown
+   url: markdown
  - title: WordPress
    url: wp
  - title: Git

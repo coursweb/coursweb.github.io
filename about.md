@@ -6,7 +6,7 @@ permalink: /about/
 
 Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Parmi les matières traitées figurent le langage HTML, les styles CSS, ou encore la conception de sites avec WordPress.
 
-Ce support de cours accompagne entre autres les cours donnés à [l'Eracom](https://www.eracom.ch/) (Lausanne), à [l'Ecole d'Art Appliqués de La Chaux-de-Fonds](http://www.eaa-la-chaux-de-fonds.ch/), ainsi que les modules de formation du Collectif WP.
+Ce support de cours accompagne entre autres les cours de design et programmation web donnés à [l'Eracom](https://www.eracom.ch/) (École romande d'art et communication, Lausanne).
 
 ## Licence
 
@@ -16,4 +16,4 @@ Vous pouvez donc l'utiliser librement, y compris dans un contexte professionnel 
 
 ## Technique
 
-Ce site est hébergé sur Github et construit avec [Jekyll](http://jekyllrb.com/), un générateur de sites. Il utilise le thème de base de Jekyll, avec de petites modifications. Lisez le [README](../README.md) pour plus d'infos techniques.
+Ce site est hébergé sur Github et construit avec [Jekyll](https://jekyllrb.com/), un générateur de sites. Il utilise le thème de base de Jekyll, avec de petites modifications. Lisez le [README](https://github.com/coursweb/coursweb.github.io#readme) pour plus d'infos techniques.

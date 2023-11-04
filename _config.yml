@@ -48,6 +48,8 @@ chapters:
    url: typographie
  - title: JavaScript
    url: javascript
+ - title: Processing et p5.js
+   url: processing
  - title: MarkDown
    url: markdown
  - title: WordPress

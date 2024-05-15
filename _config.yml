@@ -42,6 +42,8 @@ chapters:
    url: html
  - title: CSS
    url: css
+ - title: A11Y
+   url: a11y
  - title: Media
    url: media
  - title: Typographie

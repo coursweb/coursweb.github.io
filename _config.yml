@@ -42,6 +42,10 @@ chapters:
    url: html
  - title: CSS
    url: css
+ - title: CSS Flexbox
+   url: css-flexbox
+ - title: CSS Grid
+   url: css-grid
  - title: A11Y
    url: a11y
  - title: Media
@@ -50,7 +54,7 @@ chapters:
    url: typographie
  - title: JavaScript
    url: javascript
- - title: Processing et p5.js
+ - title: Processing / p5.js
    url: processing
  - title: MarkDown
    url: markdown
@@ -70,6 +74,8 @@ chapters:
    url: newsletters
  - title: Serveurs
    url: serveurs
+ - title: Base informatique
+   url: informatique-base
  - title: Divers
    url: divers
 

@@ -62,8 +62,6 @@ chapters:
    url: wp
  - title: Git
    url: git
- - title: Outils
-   url: outils
  - title: Figma
    url: figma
  - title: Processus
@@ -76,6 +74,8 @@ chapters:
    url: serveurs
  - title: Base informatique
    url: informatique-base
+ - title: Outils
+   url: outils
  - title: Divers
    url: divers
 

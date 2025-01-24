@@ -66,6 +66,10 @@ chapters:
    url: figma
  - title: Processus
    url: processus
+ - title: Agile
+   url: agile
+ - title: Feedback
+   url: feedback
  - title: Créativité
    url: crea  
  - title: Newsletters
@@ -74,6 +78,8 @@ chapters:
    url: serveurs
  - title: Base informatique
    url: informatique-base
+ - title: Portfolio
+   url: portfolio   
  - title: Outils
    url: outils
  - title: Divers

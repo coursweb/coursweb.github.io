@@ -18,4 +18,16 @@ layout: default
 
    </nav>
 
+   <h2 class="title-h2">Cours actuels</h2>
+
+   <nav class="index-menu index-cours">
+
+    {% for chapter in site.cours %}
+  
+        <a class="index-link" href="{{ chapter.url }}">{{ chapter.title }}</a>
+
+    {% endfor %}
+
+   </nav>
+
 </div>

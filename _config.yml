@@ -85,5 +85,14 @@ chapters:
  - title: Divers
    url: divers
 
+cours:
+ - title: ID432
+   url: https://eracom-id432.github.io/cp-dev4/
+ - title: ID431
+   url: https://eracom-id431.github.io/cp-dev4/
+ - title: GR450
+   url: https://cours-web.ch/projet-web-gr450/
+ - title: GR451
+   url: https://cours-web.ch/projet-web-gr451/
 
 # end of _config.yml

@@ -16,11 +16,6 @@ $(document).ready(function() {
 
   /* Trigger Popup */
 
-  $('.image-link').magnificPopup({    
-    type:'image',
-    closeOnContentClick: true,
-    verticalFit: true
-  });
 
   /* Show Edit Icons */
 
